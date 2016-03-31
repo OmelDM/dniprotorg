@@ -77,11 +77,11 @@
 					<div class="product-buy product-buy-shadow">
 						<span class="product-buy-price">60</span><span class="product-buy-price"> грн/кг</span>
 						<form method="post" class="product-buy-form">
-							<div class="product-buy-button">
+							<div class="product-buy-button" onclick="updateSpinner('minus', 'id123');">
 								&minus;
 							</div>
-							<input class="product-buy-text" type="text" name="count" value="1" maxlength="3">
-							<div class="product-buy-button">
+							<input id="id123" class="product-buy-text" type="number" name="count" value="1" maxlength="3">
+							<div class="product-buy-button" onclick="updateSpinner('plus', 'id123');">
 								&plus;
 							</div><br>
 							<div class="product-buy-button">
@@ -167,6 +167,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
+	<script src="js/main.js"></script>
 	<script>
 		$(document).ready(function() {
 			var owl = $('.owl-carousel');

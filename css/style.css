@@ -138,7 +138,7 @@ li.nav-main-dropdown-menu-item {
 	opacity: 0.5;
 	width: 75px;
 	height: 75px;
-	background: url(images/empty-cart.png);
+	background: url(../images/empty-cart.png);
 	background-size: contain;
 }
 .shop-cart-full {
@@ -160,7 +160,7 @@ li.nav-main-dropdown-menu-item {
 	opacity: 0.7;
 	width: 75px;
 	height: 75px;
-	background: url(images/full-cart.png);
+	background: url(../images/full-cart.png);
 	background-size: contain;
 }
 .shop-cart-items-count {
@@ -172,9 +172,23 @@ li.nav-main-dropdown-menu-item {
 .shop-cart-buy {
 	display: inline-block;
 	position: absolute;
-	right: 0;
+	right: -30px;
 	top: 105px;
-	background: #D73936;
+	font-family: Helvetica;
+	font-size: 20px;
+	text-decoration: none;
+	color: #D73936;
+	text-shadow: 2px 0px 0px rgba(255, 255, 255, 0.5), 3px 0px 0px rgba(255, 255, 255, 0.4), 4px 0px 0px rgba(255, 255, 255, 0.3), 5px 0px 0px rgba(255, 255, 255, 0.2),
+2px 2px 0px rgba(255, 255, 255, 0.5), 3px 3px 0px rgba(255, 255, 255, 0.4), 4px 4px 0px rgba(255, 255, 255, 0.3), 5px 5px 0px rgba(255, 255, 255, 0.2),
+0px 2px 0px rgba(255, 255, 255, 0.5), 0px 3px 0px rgba(255, 255, 255, 0.4), 0px 4px 0px rgba(255, 255, 255, 0.3), 0px 5px 0px rgba(255, 255, 255, 0.2),
+-2px 2px 0px rgba(255, 255, 255, 0.5), -3px 3px 0px rgba(255, 255, 255, 0.4), -4px 4px 0px rgba(255, 255, 255, 0.3), -5px 5px 0px rgba(255, 255, 255, 0.2),
+-2px 0px 0px rgba(255, 255, 255, 0.5), -3px 0px 0px rgba(255, 255, 255, 0.4), -4px 0px 0px rgba(255, 255, 255, 0.3), -5px 0px 0px rgba(255, 255, 255, 0.2),
+-2px -2px 0px rgba(255, 255, 255, 0.5), -3px -3px 0px rgba(255, 255, 255, 0.4), -4px -4px 0px rgba(255, 255, 255, 0.3), -5px -5px 0px rgba(255, 255, 255, 0.2),
+0px -2px 0px rgba(255, 255, 255, 0.5), 0px -3px 0px rgba(255, 255, 255, 0.4), 0px -4px 0px rgba(255, 255, 255, 0.3), 0px -5px 0px rgba(255, 255, 255, 0.2),
+2px -2px 0px rgba(255, 255, 255, 0.5), 3px -3px 0px rgba(255, 255, 255, 0.4), 4px -4px 0px rgba(255, 255, 255, 0.3), 5px -5px 0px rgba(255, 255, 255, 0.2);
+}
+.shop-cart-buy:hover {
+	text-shadow: white 2px 0px, white 2px 2px, white 0px 2px, white -2px 2px, white -2px 0px, white -2px -2px, white 0px -2px, white 2px -2px;
 }
 .shop-cart-img {
 	width: 75px;
