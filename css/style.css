@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic);
+@import url(bootstrap-grid.css);
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #000 url(../images/bg.jpg) repeat-y center;
+	background-attachment: fixed;
+	font-family: 'Neucha', cursive;
+	color: #660000;
+}
+.row {
+	margin-top: 15px;
+}
+.bg-white-transparent {
+	background: rgba(255,255,255, 0.7);
+}
+.logo {
+	display: inline-block;
+	width: 291px;
+	height: 251px;
+	margin-top: 10px;
+}
+.social-block {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 5px 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+.social-block-fb-logo {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #fff;
+	vertical-align: middle;
+	opacity: 0.75;
+}
+.social-block-fb-logo:hover {
+	opacity: 1;
+}
+.text-center {
+	text-align: center;
+}
+.nav-main a {
+	text-decoration: none;
+	color: #660000;
+}
+.nav-main li {
+	font-size: 36px;
+	display: inline-block;
+	padding-right: 30px;
+	text-shadow: 2px 0px 0px rgba(255, 255, 255, 0.5), 3px 0px 0px rgba(255, 255, 255, 0.4), 4px 0px 0px rgba(255, 255, 255, 0.3), 5px 0px 0px rgba(255, 255, 255, 0.2),
+2px 2px 0px rgba(255, 255, 255, 0.5), 3px 3px 0px rgba(255, 255, 255, 0.4), 4px 4px 0px rgba(255, 255, 255, 0.3), 5px 5px 0px rgba(255, 255, 255, 0.2),
+0px 2px 0px rgba(255, 255, 255, 0.5), 0px 3px 0px rgba(255, 255, 255, 0.4), 0px 4px 0px rgba(255, 255, 255, 0.3), 0px 5px 0px rgba(255, 255, 255, 0.2),
+-2px 2px 0px rgba(255, 255, 255, 0.5), -3px 3px 0px rgba(255, 255, 255, 0.4), -4px 4px 0px rgba(255, 255, 255, 0.3), -5px 5px 0px rgba(255, 255, 255, 0.2),
+-2px 0px 0px rgba(255, 255, 255, 0.5), -3px 0px 0px rgba(255, 255, 255, 0.4), -4px 0px 0px rgba(255, 255, 255, 0.3), -5px 0px 0px rgba(255, 255, 255, 0.2),
+-2px -2px 0px rgba(255, 255, 255, 0.5), -3px -3px 0px rgba(255, 255, 255, 0.4), -4px -4px 0px rgba(255, 255, 255, 0.3), -5px -5px 0px rgba(255, 255, 255, 0.2),
+0px -2px 0px rgba(255, 255, 255, 0.5), 0px -3px 0px rgba(255, 255, 255, 0.4), 0px -4px 0px rgba(255, 255, 255, 0.3), 0px -5px 0px rgba(255, 255, 255, 0.2),
+2px -2px 0px rgba(255, 255, 255, 0.5), 3px -3px 0px rgba(255, 255, 255, 0.4), 4px -4px 0px rgba(255, 255, 255, 0.3), 5px -5px 0px rgba(255, 255, 255, 0.2);
+}
+.nav-main li:hover {
+	text-shadow: white 2px 0px, white 2px 2px, white 0px 2px, white -2px 2px, white -2px 0px, white -2px -2px, white 0px -2px, white 2px -2px;
+}
+.nav-main-dropdown {
+	display: inline-block;
+}
+.nav-main-dropdown-menu {
+	display: none;
+	position: absolute;
+	z-index:100;
+}
+.nav-main-dropdown:hover .nav-main-dropdown-menu {
+	display: block;
+}
+li.nav-main-dropdown-menu-item {
+	font-size: 26px;
+	text-align: left;
+	display: block;
+}
+.content-main {
+	display: inline-block;
+	margin-right: 5px;
+	padding: 10px;
+}
+.content-right {
+	display: inline-block;	
+}
+.content-main p {
+	font-size: 24px;
+	text-align: justify;
+	text-indent: 20px;
+	margin-top: 0.4em;
+	margin-bottom: 0;
+	line-height: 1.1em;
+}
+.partner-img {
+	margin: 10px;
+}
+.copyrights {
+	line-height: 36px;
+	font-weight: bold;
+}
+@media (max-width: 970px) {
+	.nav-main-dropdown-menu {
+		background: rgba(255,255,255, 0.9);
+		padding: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+	}
+	.partners, .copyrights {
+		margin: 0 15px;
+	}
+	.content-main {
+		margin-right: 0;
+	}
+}
+@media (max-width: 767px) {
+	.logo {
+		width: 250px;
+		height: 216px;
+	}
+	.logo img {
+		width: 250px;
+		height: 216px;
+	}
+}
+.animal-img {
+	display: inline-block;
+	opacity: 0.7;
+	margin-right: 40px;
+}
+.shop-cart-empty {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	opacity: 0.5;
+	width: 75px;
+	height: 75px;
+	background: url(images/empty-cart.png);
+	background-size: contain;
+}
+.shop-cart-full {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	background: #D73936;
+	border-radius: 50%;
+	min-width: 30px;
+	min-height: 30px;
+	padding: 10px;
+}
+.shop-cart-full::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: -15px;
+	opacity: 0.7;
+	width: 75px;
+	height: 75px;
+	background: url(images/full-cart.png);
+	background-size: contain;
+}
+.shop-cart-items-count {
+	font-family: Helvetica;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+.shop-cart-buy {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 105px;
+	background: #D73936;
+}
+.shop-cart-img {
+	width: 75px;
+	height: 75px;
+}
+/*
+	Products
+*/
+.product {
+	display: inline-block;
+	margin: 20px;
+	width: 285px;
+	height: 250px;
+	padding: 15px;
+	position: relative;
+	background: rgba(255, 255, 255, 0.7);
+}
+.product-title {
+	text-decoration: none;
+	color: #660000;
+	font-size: 30px;
+}
+.product-image {
+	display: inline-block;
+	width: 255px;
+	height: 165px;
+}
+.product:hover {
+	background: #fff;
+}
+.product-buy {
+	font-family: Helvetica;
+	display: none;
+	position: absolute;
+	top: 250px;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	background: #fff;
+	z-index: 100;
+}
+.product:hover .product-buy {
+	display: block;
+}
+.product-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+.product:hover .product-buy-shadow {
+	box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.3), 0 16px 20px 0 rgba(0, 0, 0, 0.29);
+}
+.product-buy-form {
+	padding: 10px;
+}
+.product-buy-button {
+	display: inline-block;
+	margin: 10px 10px;
+	padding: 5px 8px;
+	font-size: 16px;
+	color: #D73936;
+	cursor: pointer;
+	border: 1px solid #ccc;
+}
+.product-buy-button:hover {
+	color: #fff;
+	background: #D73936;
+	border: 1px solid #D73936;
+}
+.product-buy-text {
+	padding: 5px 8px;
+	width: 50px;
+	font-size: 14px;
+	text-align: right;
+	border: 1px solid #ccc;
+}
+.product-buy-text:focus {
+	border: 1px solid #D73936;
+}
+.product-buy-text:hover {
+	border: 1px solid #D73936;
+}
