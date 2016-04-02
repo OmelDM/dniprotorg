@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+<head>
+<!--	<base href="">	-->  
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>Title</title>
+</head>
+<body>
+	<!-- start of Facebook Page Plugin code -->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.5&appId=815885215126033";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+    </script>
+	<!-- end of Facebook Page Plugin code -->
+
+	<div class="container">
+		<!-- Header -->
+		<header class="row">
+			<div class="col-lg-12 text-center">
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.png" alt="">
+					</a>
+				</div>
+				<div class="social-block bg-white-transparent hidden-xs hidden-sm">
+					<span class="">Ми в мережі Facebook: </span>
+					<a href="https://www.facebook.com/dniprotorg/" target="_blank">
+						<img class="social-block-fb-logo" src="images/fb-logo.jpg" alt="">
+					</a>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Navigation -->
+		<nav class="row">
+			<div class="col-lg-12 text-center">
+				<ul class="nav-main">
+					<li><a href="#">Головна</a></li>
+					<li class="nav-main-dropdown"><a href="#">Продукція</a>
+							<ul class="nav-main-dropdown-menu">
+								<li class="nav-main-dropdown-menu-item"><a href="#">М'ясо</a></li>
+								<li class="nav-main-dropdown-menu-item"><a href="#">Ковбаси</a></li>
+								<li class="nav-main-dropdown-menu-item"><a href="#">М'ясні делікатеси</a></li>
+								<li class="nav-main-dropdown-menu-item"><a href="#">Напівфабрикати</a></li>
+							</ul>
+					</li>
+					<li><a href="#">Магазини</a></li>
+					<li><a href="#">Акції</a></li>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Контакти</a></li>
+				</ul>
+			</div>
+		</nav>
+				
+		<!-- Content -->
+		<div class="row">
+			
+			<!-- Main content -->
+			<div class="col-lg-12 bg-white-transparent">
+				<div class="cart-title">
+					Ваш кошик
+					<a name="shopCart"></a>
+				</div>
+				<div class="cart-content">
+					<form action="[[+this_page_url]]#shopCart" method="post">
+						<table class="cart-content-table">
+							<thead class="cart-content-table-head">
+								<tr>
+									<th colspan="2">Продукт</th>
+									<th>Ціна</th>
+									<th>Кількість</th>
+									<th colspan="2">Разом</th>
+								</tr>
+							</thead>
+							<tbody class="cart-content-table-body">
+								<tr>
+									<td><img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/varenik-bistro-vkusno555.ab4d8e516a32a277d9e59a0d4703aeae.jpg" alt="Вареники" class="cart-content-image"></td>
+									<td><a href="#">Вареники</a></td>
+									<td>55 грн.</td>
+									<td>
+										<div class="product-buy-button">
+											&minus;
+										</div>
+										<input class="product-buy-text" type="text" name="count" value="10" maxlength="3">
+										<div class="product-buy-button">
+											&plus;
+										</div>
+									</td>
+									<td>550 грн.</td>
+									<td><a href="#"><img src="http://www.iconsdb.com/icons/preview/gray/delete-2-xxl.png" alt="" class="cart-content-remove"></a></td>
+								</tr>
+								<tr>
+									<td><img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/vareni_shpykachky.c3bafb491a6bd71b26722cc201366ba5.jpg" alt="Сардельки Шпикачки" class="cart-content-image"></td>
+									<td><a href="#">Сардельки Шпикачки</a></td>
+									<td>60 грн.</td>
+									<td>
+										<div class="product-buy-button">
+											&minus;
+										</div>
+										<input class="product-buy-text" type="text" name="count" value="2" maxlength="3">
+										<div class="product-buy-button">
+											&plus;
+										</div>
+									</td>
+									<td>120 грн.</td>
+									<td><a href="#"><img src="http://www.iconsdb.com/icons/preview/gray/delete-2-xxl.png" alt="" class="cart-content-remove"></a></td>
+								</tr>
+								<tr>
+									<td><img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/myasni.1abf639d5f8e1b0c4161a005b0509c90.jpg" alt="Сарделька соковита" class="cart-content-image"></td>
+									<td><a href="#">Сарделька соковита</a></td>
+									<td>45 грн.</td>
+									<td>
+										<div class="product-buy-button">
+											&minus;
+										</div>
+										<input class="product-buy-text" type="text" name="count" value="1" maxlength="3">
+										<div class="product-buy-button">
+											&plus;
+										</div>
+									</td>
+									<td>45 грн.</td>
+									<td><a href="#"><img src="http://www.iconsdb.com/icons/preview/gray/delete-2-xxl.png" alt="" class="cart-content-remove"></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+				<div class="cart-order">
+					<p>Загальна сума: 715 грн.</p>
+					<div class="product-buy-button">
+						Оформити замовлення
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="row">
+			<div class="col-lg-12 bg-white-transparent text-center copyrights">
+				ТОВ &laquo;ТД &laquo;ДНІПРО-торг&raquo; &copy; 2015
+			</div>
+		</footer>
+		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!--
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-70454780-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	-->
+</body>
+</html>
