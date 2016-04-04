@@ -7,5 +7,14 @@ function updateSpinner(anAction, anID) {
 	} else if (anAction == "minus") {
 		value--;
 	}
+	
+	if (value < spinner.min) {
+		value = spinner.min;
+	}
+	
+	if (spinner.max < value) {
+		value = spinner.max;
+	}
+
 	spinner.value = value;
 }

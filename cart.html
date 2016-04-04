@@ -90,11 +90,11 @@
 									<td><a href="#">Вареники</a></td>
 									<td>55 грн.</td>
 									<td>
-										<div class="product-buy-button">
+										<div class="product-buy-button" onclick="updateSpinner('minus', 'id11');">
 											&minus;
 										</div>
-										<input class="product-buy-text" type="text" name="count" value="10" maxlength="3">
-										<div class="product-buy-button">
+										<input class="product-buy-text" type="number" id="id11" name="count" min="1" max="999" value="10" maxlength="3">
+										<div class="product-buy-button" onclick="updateSpinner('plus', 'id11');">
 											&plus;
 										</div>
 									</td>
@@ -106,11 +106,11 @@
 									<td><a href="#">Сардельки Шпикачки</a></td>
 									<td>60 грн.</td>
 									<td>
-										<div class="product-buy-button">
+										<div class="product-buy-button" onclick="updateSpinner('minus', 'id22');">
 											&minus;
 										</div>
-										<input class="product-buy-text" type="text" name="count" value="2" maxlength="3">
-										<div class="product-buy-button">
+										<input class="product-buy-text" type="number" id="id22" name="count" min="1" max="999" value="10" maxlength="3">
+										<div class="product-buy-button" onclick="updateSpinner('plus', 'id22');">
 											&plus;
 										</div>
 									</td>
@@ -122,11 +122,11 @@
 									<td><a href="#">Сарделька соковита</a></td>
 									<td>45 грн.</td>
 									<td>
-										<div class="product-buy-button">
+										<div class="product-buy-button" onclick="updateSpinner('minus', 'id33');">
 											&minus;
 										</div>
-										<input class="product-buy-text" type="text" name="count" value="1" maxlength="3">
-										<div class="product-buy-button">
+										<input class="product-buy-text" type="number" id="id33" name="count" min="1" max="999" value="10" maxlength="3">
+										<div class="product-buy-button" onclick="updateSpinner('plus', 'id33');">
 											&plus;
 										</div>
 									</td>
@@ -156,6 +156,7 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 <!--
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
