@@ -17,4 +17,5 @@ function updateSpinner(anAction, anID) {
 	}
 
 	spinner.value = value;
+	SHK.changeCartItemsCount();
 }
