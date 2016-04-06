@@ -1,4 +1,9 @@
-function updateSpinner(anAction, anID) {
+function updateSpinner(anAction, anID, anUpdateCount) {
+
+	if (undefined === anUpdateCount) {
+		anUpdateCount = false;
+	}
+
 	var spinner = document.getElementById(anID);
 	var value = parseInt(spinner.value);
 	
@@ -17,5 +22,8 @@ function updateSpinner(anAction, anID) {
 	}
 
 	spinner.value = value;
-	SHK.changeCartItemsCount();
+	
+	if (true == anUpdateCount) {
+		SHK.changeCartItemsCount();
+	}
 }
