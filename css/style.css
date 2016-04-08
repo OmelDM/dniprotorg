@@ -257,6 +257,16 @@ li.nav-main-dropdown-menu-item {
 	font-family: Arial, sans-serif;
 	text-align: right;
 }
+.cart-order-price {
+	display: inline-block;
+}
+.price-data, .price-total-data {
+	min-width: 120px;
+	font-size: 1.15em;
+}
+.price-total-data {
+	font-weight: bold;
+}
 /*
 	Products
 */
@@ -313,6 +323,7 @@ li.nav-main-dropdown-menu-item {
 	color: #D73936;
 	cursor: pointer;
 	border: 1px solid #ccc;
+	background: #fff;
 }
 .product-buy-button:hover {
 	color: #fff;

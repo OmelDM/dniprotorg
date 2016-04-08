@@ -83,7 +83,7 @@
 						Ваш кошик
 						<a name="shopCart"></a>
 					</div>
-					<form action="[[+this_page_url]]#shopCart" method="post">
+					<form action="#" method="post">
 						<table class="cart-content-table">
 							<thead class="cart-content-table-head">
 								<tr>
@@ -102,13 +102,13 @@
 										<div class="product-buy-button" onclick="updateSpinner('minus', 'id11', true);">
 											&minus;
 										</div>
-										<input class="product-buy-text" type="number" id="id11" name="count[]" onblur="SHK.changeCartItemsCount();return false;" min="1" max="999" value="10" maxlength="3">
+										<input class="product-buy-text shk-count" type="number" id="id11" name="count[]" onblur="SHK.changeCartItemsCount();return false;" min="1" max="999" value="10" maxlength="3">
 										<div class="product-buy-button" onclick="updateSpinner('plus', 'id11', true);">
 											&plus;
 										</div>
 									</td>
 									<td>550 грн.</td>
-									<td><a href="#"><img src="http://www.iconsdb.com/icons/preview/gray/delete-2-xxl.png" alt="" class="cart-content-remove"></a></td>
+									<td><a href="#" class="shk-del"><img src="http://www.babystreet.kiev.ua/testdev/images/del.png" alt="" class="cart-content-remove"></a></td>
 								</tr>
 								<tr>
 									<td><img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/vareni_shpykachky.c3bafb491a6bd71b26722cc201366ba5.jpg" alt="Сардельки Шпикачки" class="cart-content-image"></td>
@@ -118,13 +118,13 @@
 										<div class="product-buy-button" onclick="updateSpinner('minus', 'id22', true);">
 											&minus;
 										</div>
-										<input class="product-buy-text" type="number" id="id22" name="count[]" onblur="SHK.changeCartItemsCount();return false;" min="1" max="999" value="10" maxlength="3">
+										<input class="product-buy-text shk-count" type="number" id="id22" name="count[]" onblur="SHK.changeCartItemsCount();return false;" min="1" max="999" value="10" maxlength="3">
 										<div class="product-buy-button" onclick="updateSpinner('plus', 'id22', true);">
 											&plus;
 										</div>
 									</td>
 									<td>120 грн.</td>
-									<td><a href="#"><img src="http://www.iconsdb.com/icons/preview/gray/delete-2-xxl.png" alt="" class="cart-content-remove"></a></td>
+									<td><a href="#" class="shk-del"><img src="http://www.babystreet.kiev.ua/testdev/images/del.png" alt="" class="cart-content-remove"></a></td>
 								</tr>
 								<tr>
 									<td><img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/myasni.1abf639d5f8e1b0c4161a005b0509c90.jpg" alt="Сарделька соковита" class="cart-content-image"></td>
@@ -134,49 +134,49 @@
 										<div class="product-buy-button" onclick="updateSpinner('minus', 'id33', true);">
 											&minus;
 										</div>
-										<input class="product-buy-text" type="number" id="id33" name="count[]" onblur="SHK.changeCartItemsCount();return false;" min="1" max="999" value="10" maxlength="3">
+										<input class="product-buy-text shk-count" type="number" id="id33" name="count[]" onblur="SHK.changeCartItemsCount();return false;" min="1" max="999" value="10" maxlength="3">
 										<div class="product-buy-button" onclick="updateSpinner('plus', 'id33', true);">
 											&plus;
 										</div>
 									</td>
 									<td>45 грн.</td>
-									<td><a href="#"><img src="http://www.iconsdb.com/icons/preview/gray/delete-2-xxl.png" alt="" class="cart-content-remove"></a></td>
+									<td><a href="#" class="shk-del"><img src="http://www.babystreet.kiev.ua/testdev/images/del.png" alt="" class="cart-content-remove"></a></td>
 								</tr>
 							</tbody>
 						</table>
 						<div class="cart-order">
-							<table>
+							<div class="cart-order-price">
+							<table class="cart-order-price-table">
 								<tr>
-									<td></td>
-									<td></td>
 									<td>Сума замовлення:</td>
-									<td>715 грн.</td>
+									<td class="price-data">715 грн.</td>
 								</tr>
 								<tr>
-									<td>Тип доставки:</td>
-									<td>
+									<td>Вартість доставки:</td>
+									<td class="price-data">30 грн.</td>
+								</tr>
+								<tr>
+									<td>Загальна сума:</td>
+									<td class="price-total-data">111745 грн.</td>
+								</tr>
+							</table>
+							</div>
+						</div>
+					</form>
+				</div>
+				
+				Тип доставки:
+									
 										<select name="shk_delivery">
 											<option value="Самовивіз" >Самовивіз</option>
 											<option value="Кур`єрська доставка" >Кур`єрська доставка</option>
 											<option value="Нова Пошта" >Нова Пошта</option>
 										</select>
-									</td>
-									<td>Вартість доставки:</td>
-									<td>30 грн.</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td>Загальна сума:</td>
-									<td>745 грн.</td>
-								</tr>
-							</table>
-							<div class="product-buy-button">
+				
+				<div class="product-buy-button">
 								Оформити замовлення
 							</div>
-						</div>
-					</form>
-				</div>
+									
 			</div>
 		</div>
 		
