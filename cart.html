@@ -148,16 +148,12 @@
 							<div class="cart-order-price">
 							<table class="cart-order-price-table">
 								<tr>
-									<td>Сума замовлення:</td>
-									<td class="price-data">715 грн.</td>
-								</tr>
-								<tr>
 									<td>Вартість доставки:</td>
 									<td class="price-data">30 грн.</td>
 								</tr>
 								<tr>
 									<td>Загальна сума:</td>
-									<td class="price-total-data">111745 грн.</td>
+									<td class="price-total-data">715 грн.</td>
 								</tr>
 							</table>
 							</div>
@@ -165,18 +161,78 @@
 					</form>
 				</div>
 				
-				Тип доставки:
-									
-										<select name="shk_delivery">
+				<div class="cart-order">
+					<p class="error"></p>
+					<br>
+					<form method="post" action="#" id="shopOrderForm">
+						<fieldset>
+							<input type="text" name="nospam:blank" value="" style="display:none;">
+							<input type="hidden" name="order" value="1">
+
+							<table cellpadding="3">
+								<tr>
+									<td>П.І.Б.*:</td>
+									<td>
+										<input name="fullname" size="30" class="textfield" type="text" value="" />
+										<div></div>
+									</td>
+								</tr>
+								<tr>
+									<td>Адреса*:</td>
+									<td>
+										  <input name="address" size="30" class="textfield" type="text" value="" />
+										  <div></div>
+									</td>
+								</tr>
+								<tr>
+									<td>E-mail*:</td>
+									<td>
+										<input name="email" size="30" class="textfield" type="text" value="" />
+										<div></div>
+									</td>
+								</tr>
+								<tr>
+									<td>Телефон*:</td>
+									<td>
+										<input name="phone" size="30" class="textfield" type="text" value="" />
+										<div></div>
+									</td>
+								</tr>
+								<tr>
+									<td>Спосіб доставки*:</td>
+									<td>
+										<select name="shk_delivery" style="width:200px;">
+											<option value=""></option>
+											<option value="Доставка на дім" >Доставка на дім</option>
 											<option value="Самовивіз" >Самовивіз</option>
-											<option value="Кур`єрська доставка" >Кур`єрська доставка</option>
-											<option value="Нова Пошта" >Нова Пошта</option>
 										</select>
-				
-				<div class="product-buy-button">
-								Оформити замовлення
-							</div>
-									
+										<div></div>
+									</td>
+								</tr>
+								<tr>
+									<td>Спосіб оплати*:</td>
+									<td>
+										<select name="payment" style="width:200px;">
+											<option value=""></option>
+											<option value="Privat24" >Privat24</option>
+										</select>
+										<div></div>
+									</td>
+								</tr>
+								<tr>
+									<td>Коментарі:</td>
+									<td>
+										<textarea name="message" class="textfield" rows="4" cols="30"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input type="submit" name="submit_button" class="button" value="Оформити замовлення" /></td>
+								</tr>
+							</table>
+						</fieldset>
+					</form>
+				</div>
 			</div>
 		</div>
 		
