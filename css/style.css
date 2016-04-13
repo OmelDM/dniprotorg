@@ -131,6 +131,34 @@ li.nav-main-dropdown-menu-item {
 	opacity: 0.7;
 	margin-right: 40px;
 }
+.login-register {
+	display: inline-block;
+	position: absolute;
+	right: 120px;
+	font-family: Helvetica;
+}
+.login-register-button {
+	color: #660000;
+	text-decoration: none;
+}
+.login-register-button:hover {
+	text-decoration: underline;
+}
+.person-before::before {
+	content: '';
+	position: absolute;
+	left: -25px;
+	width: 16px;
+	height: 16px;
+	background: url(../images/person.png);
+	background-size: cover;
+}
+@media (max-width: 992px) {
+	.login-register {
+		display: block;
+		position: static;
+	}
+}
 .shop-cart {
 	display: inline-block;
 	position: absolute;
