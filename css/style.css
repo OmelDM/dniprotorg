@@ -85,6 +85,9 @@ li.nav-main-dropdown-menu-item {
 	margin-right: 5px;
 	padding: 10px;
 }
+.content-header {
+     margin: 15px;
+}
 .content-right {
 	display: inline-block;	
 }
