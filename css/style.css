@@ -247,17 +247,19 @@ li.nav-main-dropdown-menu-item {
 .cart-content-table {
 	width: 100%;
 	border-collapse: collapse;
-	border: 3px #fff solid;
+	border: 0;
 	font-family: Arial, sans-serif;
-}
-.cart-content-table-head {
-	background: #fff;
+	border-bottom: 1px solid #eee;
 }
 .cart-content-table-head th {
 	padding: 15px 10px;
+	border-top: 1px solid #eee;
+}
+.cart-content-table-body tr {
+	border-top: 1px solid #eee;
 }
 .cart-content-table-body tr:hover {
-	background: #fff;
+	background: #eee;
 }
 .cart-content-table-body td {
 	padding: 20px;
@@ -275,8 +277,8 @@ li.nav-main-dropdown-menu-item {
 	text-align: left;
 }
 .cart-content-image {
-	width: 150px;
-	height: 95px;
+	width: 155px;
+	height: 100px;
 }
 .cart-content-remove {
 	width: 15px;
@@ -436,4 +438,87 @@ li.nav-main-dropdown-menu-item {
 }
 .form-input:hover {
 	border: 1px solid #D73936;
+}
+/*
+	Modal cart
+*/
+.modal-block {
+	/*display: none;*/
+	background: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+}
+.cart-content-modal {
+	margin: 75px 150px;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.99);
+	min-width: 600px;
+}
+.modal-close-button {
+	background: url(http://iconshow.me/media/images/Mixed/Free-Flat-UI-Icons/png/128/cross-24-128.png) center center;
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	float: right;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.modal-close-button:hover {
+	opacity: 1;
+}
+.modal-close-button:after {
+	clear: both;
+}
+.cart-container[data-modal='1'] .modal-block {
+	display: none;
+}
+.cart-container[data-modal='0'] .modal-block {
+	display: block;
+}
+.cart-container {
+	display: inline-block;
+	position: absolute;
+	right: 15px;
+}
+.checkout-button {
+	display: inline-block;
+	margin: 10px 10px;
+	padding: 5px 8px;
+	font-size: 16px;
+	color: #D73936;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	background: #fff;
+	text-decoration: none;
+}
+.checkout-button:hover {
+	color: #fff;
+	background: #D73936;
+	border: 1px solid #D73936;
+}
+.cart-order-continue {
+	display: inline-block;
+	margin: 10px 10px;
+	padding: 5px 8px;
+	float: left;
+}
+.cart-order-continue:after {
+	clear: both;
+}
+.continue-button {
+	font-size: 16px;
+	color: #777;
+}
+.continue-button:hover {
+	text-decoration: none;
+	color: #D73936;
+}
+.form-overflow {
+	overflow: auto;
+	height: 375px;
 }
