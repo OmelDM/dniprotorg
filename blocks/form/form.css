@@ -1,5 +1,6 @@
 .form {
 	padding: 15px;
+	text-align: left;
 }
 .form_display_hidden {
 	display: none;
@@ -8,11 +9,16 @@
 	display: inline-block;
 	margin: 10px 10px;
 	padding: 5px 8px;
-	font-size: 16px;
+	font-size: 14px;
+	text-transform: uppercase;
 	color: #D73936;
 	cursor: pointer;
 	border: 1px solid #ccc;
 	background: #fff;
+}
+.form__button_wide {
+	width: 100%;
+	margin: 10px 0;
 }
 .form__button:hover {
 	color: #fff;
@@ -22,13 +28,16 @@
 .form__input {
 	padding: 5px 8px;
 	margin: 5px 0 15px 0;
+	width: 100%;
 	font-size: 14px;
+	font-weight: 300;
 	text-align: right;
 	border: 1px solid #ccc;
+
 }
-.form-input:focus {
+.form__input:focus {
 	border: 1px solid #D73936;
 }
-.form-input:hover {
+.form__input:hover {
 	border: 1px solid #D73936;
 }

@@ -1,6 +1,24 @@
 .order-form {
-	margin: 0;
+	margin: 0 auto;
+	width: 50%
 }
 .order-form__link {
-	margin: 0;
+	margin: 0 15px 0;
+	color: #D73936;
+}
+.order-form__link:hover {
+	text-decoration: none;
+}
+.order-form__link_small {
+	font-size: .8em;
+}
+.order-form__link_gray {
+	color: #888;
+}
+.order-form__link_gray:hover {
+	color: #D73936;
+}
+.order-form__link_dimmed {
+	color: #888;
+	text-decoration: none;
 }

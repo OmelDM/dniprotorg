@@ -92,20 +92,20 @@
 						<div class="order-data">
 							<h2 class="order-data__title"><span class="order-data__title-number">1</span> Контактні дані</h2>
 							<div class="order-form">
-								<a href="#" onClick="showIDWithParent('form_registration', 'form_display'); return false;" class="order-form__link">Я новий покупець</a>
-								<a href="#" onClick="showIDWithParent('form_login', 'form_display'); return false;" class="order-form__link">Я постійний покупець</a>
+								<a href="#" onClick="showIDWithParent('form_registration', 'form_display'); makeDimmed(this); return false;" class="order-form__link order-form__link_dimmed">Я новий покупець</a>
+								<a href="#" onClick="showIDWithParent('form_login', 'form_display'); makeDimmed(this); return false;" class="order-form__link">Я постійний покупець</a>
 								<div class="form form_display" id="form_registration">
 									<form>
+										<label for="name">П.І.Б.</label>
+										<input id="name" class="form__input" type="text" value="">
+										<br>
 										<label for="email">Ел. пошта</label>
 										<input id="email" class="form__input" name="email:email" type="text" value="">
 										<br>
 										<label for="tel">Телефон</label>
 										<input id="tel" class="form__input" type="text" value="">
 										<br>
-										<label for="name">П.І.Б.</label>
-										<input id="name" class="form__input" type="text" value="">
-										<br>
-										<input class="form__button" name="registerbtn" type="submit" value="Зареєструватися">
+										<input class="form__button form__button_wide" name="registerbtn" type="submit" value="Зареєструватися">
 									</form>
 								</div>
 								<div class="form form_display form_display_hidden" id="form_login">
@@ -116,8 +116,9 @@
 										<label for="password">Пароль</label>
 										<input id="password" class="form__input" name="password:password" type="password" value="">
 										<br>
-										<input class="form__button" name="loginbtn" type="submit" value="Увійти">
-										<a href="#" onClick="showIDWithParent('form_forgot_login', 'form_display'); return false;" class="order-form__link">Я забув пароль</a>
+										<input class="form__button form__button_wide" name="loginbtn" type="submit" value="Увійти">
+										<br>
+										<a href="#" onClick="showIDWithParent('form_forgot_login', 'form_display'); return false;" class="order-form__link order-form__link_small order-form__link_gray">Я забув пароль</a>
 									</form>
 								</div>
 								<div class="form form_display form_display_hidden" id="form_forgot_login">
@@ -125,16 +126,17 @@
 										<label for="email">Ел. пошта</label>
 										<input id="email" class="form__input" name="email:email" type="text" value="">
 										<br>
-										<input class="form__button" name="loginbtn" type="submit" value="Відновити пароль">
-										<a href="#" onClick="showIDWithParent('form_login', 'form_display'); return false;" class="order-form__link">Я згадав пароль</a>
+										<input class="form__button form__button_wide" name="loginbtn" type="submit" value="Відновити пароль">
+										<br>
+										<a href="#" onClick="showIDWithParent('form_login', 'form_display'); return false;" class="order-form__link order-form__link_small order-form__link_gray">Я згадав пароль</a>
 									</form>
 								</div>
 							</div>
 						</div>
 						<div class="order-data">
-							<h2 class="order-data__title"><span class="order-data__title-number">2</span> Інформація про замовлення</h2>
+							<h2 class="order-data__title order-data__title_disabled"><span class="order-data__title-number">2</span> Інформація про замовлення</h2>
 							<div class="order-form">
-								<div class="form" id="form_registration">
+								<div class="form form_display_hidden" id="form_registration">
 									<form>
 										<label for="delivery">Спосіб доставки</label>
 										<select id="delivery">
