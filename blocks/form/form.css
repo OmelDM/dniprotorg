@@ -1,7 +1,7 @@
 .form {
 	padding: 15px;
 }
-.form_hidden {
+.form_display_hidden {
 	display: none;
 }
 .form__button {
