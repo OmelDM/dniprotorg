@@ -1,5 +1,5 @@
-function showIDWithParent(anID, parentClass) {
-	var allForms = document.getElementsByClassName(parentClass);
+function showIDWithParent(anID, aParentClass) {
+	var allForms = document.getElementsByClassName(aParentClass);
 	var formToShow = document.getElementById(anID);
 
 	for (var index = 0; index < allForms.length; index++) {
@@ -22,4 +22,12 @@ function makeDimmed(anObject) {
 		allGrayed[index].classList.remove("order-form__link_dimmed");
 	}
 	anObject.classList.add("order-form__link_dimmed");
+}
+
+function selectWithIDWithParent(anID, aParentClass) {
+	var select = document.getElementById(anID);
+	var selectedOption = select.options.item(select.selectedIndex);
+	var IDToShow = selectedOption.dataset.id;
+
+	showIDWithParent(IDToShow, aParentClass);
 }

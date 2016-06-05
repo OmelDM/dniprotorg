@@ -125,11 +125,17 @@
 												<label for="delivery">Спосіб доставки</label>
 											</div>
 											<div class="key-value__value">
-												<select id="delivery" class="form__select">
+												<select id="delivery" class="form__select" onChange="selectWithIDWithParent('delivery', 'delivery-display '); return false;">
 													<option value="" disabled selected>Вибрати</option>
-													<option value="Доставка на дім">Доставка на дім</option>
-													<option value="Самовивіз">Самовивіз</option>
+													<option data-id="delivery-home" value="Доставка на дім">Доставка на дім</option>
+													<option data-id="delivery-self" value="Самовивіз">Самовивіз</option>
 												</select>
+												<div id="delivery-home" class="delivery-display form_display_hidden">
+													Доставка на дім
+												</div>
+												<div id="delivery-self" class="delivery-display form_display_hidden">
+													Самовивіз
+												</div>
 											</div>
 											<div class="key-value__key">
 												<label for="paymant">Спосіб оплати</label>
