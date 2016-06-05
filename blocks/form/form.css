@@ -1,5 +1,5 @@
 .form {
-	padding: 15px;
+	padding: 0;
 	text-align: left;
 }
 .form_display_hidden {
@@ -7,7 +7,6 @@
 }
 .form__button {
 	display: inline-block;
-	margin: 10px 10px;
 	padding: 5px 8px;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -18,7 +17,6 @@
 }
 .form__button_wide {
 	width: 100%;
-	margin: 10px 0;
 }
 .form__button:hover {
 	color: #fff;
@@ -27,7 +25,6 @@
 }
 .form__input {
 	padding: 5px 8px;
-	margin: 5px 0 15px 0;
 	width: 100%;
 	font-size: 14px;
 	font-weight: 300;
@@ -40,4 +37,8 @@
 }
 .form__input:hover {
 	border: 1px solid #D73936;
+}
+.form__select {
+	width: 100%;
+	font-size: 1.4em;
 }

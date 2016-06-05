@@ -1,21 +1,20 @@
 .key-value {
-	margin: 5px;
-	padding: 25px;
-	background: rgba(255, 255, 255, 0.7);
+	margin: 0 0 20px 0;
 }
 .key-value__key {
-	margin: 25px 0 0 0;
+	margin: 25px 0 5px 0;
 }
 .key-value__key_first {
-	margin-top: 5px;
+	margin-top: 0;
 }
-.key-value_value {
-	margin: 5px;
-	padding: 10px;
+.key-value__value {
 	text-align: right;
 	font-size: 1.2em;
-	border-bottom: 1px solid #777;
 }
-.key-value_value_last {
-	margin-bottom: 5px;
+.key-value__value_border-bottom {
+	border-bottom: 1px solid #777;
+	padding: 0 10px 10px 10px;
+}
+.key-value__value_last {
+	margin-bottom: 25px;
 }

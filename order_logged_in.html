@@ -96,19 +96,19 @@
 									<div class="key-value__key key-value__key_first">
 										П.І.Б.
 									</div>
-									<div class="key-value_value">
+									<div class="key-value__value key-value__value_border-bottom">
 										Іваненко Петро
 									</div>
 									<div class="key-value__key">
 										Ел. пошта
 									</div>
-									<div class="key-value_value">
+									<div class="key-value__value key-value__value_border-bottom">
 										ivanenko@gmail.com
 									</div>
 									<div class="key-value__key">
 										Телефон
 									</div>
-									<div class="key-value_value key-value_value_last">
+									<div class="key-value__value key-value__value_border-bottom key-value__value_last">
 										+38 (012) 123-45-67
 									</div>
 								</div>
@@ -120,21 +120,29 @@
 							<div class="order-form">
 								<div class="form" id="form_registration">
 									<form>
-										<label for="delivery">Спосіб доставки</label>
-										<select id="delivery">
-											<option value=""></option>
-											<option value="Доставка на дім">Доставка на дім</option>
-											<option value="Самовивіз">Самовивіз</option>
-										</select>
-										<br>
-										<label for="paymant">Спосіб оплати</label>
-										<select id="paymant">
-											<option value=""></option>
-											<option value="Готівкою">Готівкою</option>
-											<option value="Privat24">Privat24</option>
-										</select>
-										<br>
-										<input class="form__button" name="orderbtn" type="submit" value="Оформити замовлення">
+										<div class="key-value">
+											<div class="key-value__key key-value__key_first">
+												<label for="delivery">Спосіб доставки</label>
+											</div>
+											<div class="key-value__value">
+												<select id="delivery" class="form__select">
+													<option value="" disabled selected>Вибрати</option>
+													<option value="Доставка на дім">Доставка на дім</option>
+													<option value="Самовивіз">Самовивіз</option>
+												</select>
+											</div>
+											<div class="key-value__key">
+												<label for="paymant">Спосіб оплати</label>
+											</div>
+											<div class="key-value__value key-value__value_last">
+												<select id="paymant" class="form__select">
+													<option value="" disabled selected>Вибрати</option>
+													<option value="Готівкою">Готівкою</option>
+													<option value="Privat24">Privat24</option>
+												</select>
+											</div>
+										</div>
+										<input class="form__button form__button_wide" name="orderbtn" type="submit" value="Оформити замовлення">
 									</form>
 								</div>
 							</div>

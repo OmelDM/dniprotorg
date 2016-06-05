@@ -1,6 +1,12 @@
 .order-form {
-	margin: 0 auto;
-	width: 75%
+	margin: 10px auto;
+	padding: 20px;
+	width: 75%;
+	background: rgba(255, 255, 255, 0.7);
+}
+.order-form__top {
+	text-align: center;
+	margin: 0 0 10px 0;
 }
 .order-form__link {
 	margin: 0 15px 0;
