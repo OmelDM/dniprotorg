@@ -131,21 +131,55 @@
 													<option data-id="delivery-self" value="Самовивіз">Самовивіз</option>
 												</select>
 												<div id="delivery-home" class="delivery-display form_display_hidden">
-													Доставка на дім
+													<!-- START If no adress -->
+<!-- 													<div class="key-value">
+														<div class="key-value__key key-value__key_first">
+															<label for="address">Адреса</label>
+														</div>
+														<div class="key-value__value key-value__value_last">
+															<input id="address" class="form__input" type="text" value="">
+														</div>
+													</div> -->
+													<!-- END If no adress -->
+
+													<!-- START If address -->
+													<div class="key-value">
+														<div class="key-value__key key-value__key_first">
+															Адреса
+														</div>
+														<div class="key-value__value key-value__value_border-bottom key-value__value_last">
+															Київ, вул. Хрещатик, 36
+														</div>
+													</div>
+													<a href="#profile-address" class="order-form__link order-form__link_small order-form__link_gray">Змінити адресу</a>
+													<!-- END If address -->
+
 												</div>
-												<div id="delivery-self" class="delivery-display form_display_hidden">
-													Самовивіз
+												<div id="delivery-self" class="order-form__text delivery-display form_display_hidden">
+													Ви можете забрати своє замовлення за адресою:
+													<br>
+													Київ, вул. Миру, 19
+													<br>
+													Пн. - Пт.
+													<br>
+													з 9:00 до 18:00
 												</div>
 											</div>
 											<div class="key-value__key">
 												<label for="paymant">Спосіб оплати</label>
 											</div>
-											<div class="key-value__value key-value__value_last">
+											<div class="key-value__value">
 												<select id="paymant" class="form__select">
 													<option value="" disabled selected>Вибрати</option>
 													<option value="Готівкою">Готівкою</option>
 													<option value="Privat24">Privat24</option>
 												</select>
+											</div>
+											<div class="key-value__key">
+												<label for="comments">Коментар</label>
+											</div>
+											<div class="key-value__value key-value__value_last">
+												<textarea id="comments" name="comments" class="form__textarea"></textarea>
 											</div>
 										</div>
 										<input class="form__button form__button_wide" name="orderbtn" type="submit" value="Оформити замовлення">

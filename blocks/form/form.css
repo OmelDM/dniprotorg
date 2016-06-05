@@ -28,7 +28,7 @@
 	width: 100%;
 	font-size: 14px;
 	font-weight: 300;
-	text-align: right;
+	text-align: left;
 	border: 1px solid #ccc;
 
 }
@@ -41,4 +41,13 @@
 .form__select {
 	width: 100%;
 	font-size: 1.4em;
+}
+.order-form__text {
+	padding: 10px 0 0 0;
+	font-size: .6em;
+	text-align: left;
+}
+.form__textarea {
+	width: 100%;
+	min-height: 100px;
 }
