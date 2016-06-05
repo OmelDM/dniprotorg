@@ -1,5 +1,5 @@
 function showIDWithParent(anID, parentClass) {
-	var allForms = document.getElementsByClassName("form_display");
+	var allForms = document.getElementsByClassName(parentClass);
 	var formToShow = document.getElementById(anID);
 
 	for (var index = 0; index < allForms.length; index++) {
