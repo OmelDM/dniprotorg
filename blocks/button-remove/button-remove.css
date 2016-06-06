@@ -1,0 +1,21 @@
+.button-remove {
+	background: url(http://iconshow.me/media/images/Mixed/Free-Flat-UI-Icons/png/128/cross-24-128.png) center center;
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	float: right;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.button-remove_small {
+	background-size: 12px 12px;
+	width: 12px;
+	height: 12px;
+}
+.button-remove:hover {
+	opacity: 1;
+}
+.button-remove:after {
+	clear: both;
+}
