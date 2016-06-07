@@ -510,3 +510,7 @@ li.nav-main-dropdown-menu-item {
 .delivery-display {
 	margin: 10px 0 0 0;
 }
+.error-message, .error {
+	color: #f00;
+	font-size: 12px !important;
+}
