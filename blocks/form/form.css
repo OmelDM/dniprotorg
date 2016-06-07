@@ -18,6 +18,9 @@
 .form__button_wide {
 	width: 100%;
 }
+.form__button_last{
+	margin-bottom: 10px;
+}
 .form__button:hover {
 	color: #fff;
 	background: #D73936;
