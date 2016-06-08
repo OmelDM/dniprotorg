@@ -83,6 +83,90 @@
 		
 		<!-- Content -->
 		<div class="row">
+
+			<!-- Side content -->
+			<div class="col-md-4">
+				<div class="content-right bg-white-transparent">
+					<div class="cart">
+						<div class="cart__title">
+							Ваше замовлення
+						</div>
+						<div class="cart-item">
+							<div class="cart-item__image">
+								<img class="cart-item__img" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/vareni_svynni.938ecab75924a6cabf1f17a4268f0cc8.jpg">
+							</div>
+							<div class="cart-item__content">
+								<div class="cart-item__name">
+									Сарделька 1
+								</div>
+								<div class="cart-item__price">
+									47 грн.
+								</div>
+								<div class="cart-item__count">
+									<div class="stepper">
+										<div class="stepper_button stepper_button__small" onclick="updateStepper('minus', 'id90', true);">
+											−
+										</div>
+										<input class="stepper_input stepper_input_small shk-count" type="number" name="count[]" id="id90" value="2" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
+										<div class="stepper_button stepper_button__small" onclick="updateStepper('plus', 'id90', true);">
+											+
+										</div>
+									</div>
+								</div>
+								<div class="button-remove button-remove_small">
+								</div>
+								<div class="cart-item__total-price">
+									92 грн.
+								</div>
+							</div>
+						</div>
+						<div class="cart-item">
+							<div class="cart-item__image">
+								<img class="cart-item__img" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
+							</div>
+							<div class="cart-item__content">
+
+								<div class="cart-item__name">
+									Сарделька 2
+								</div>
+								<div class="cart-item__price">
+									50 грн.
+								</div>
+								<div class="cart-item__count">
+									<div class="stepper">
+										<div class="stepper_button stepper_button__small" onclick="updateStepper('minus', 'id90', true);">
+											−
+										</div>
+										<input class="stepper_input stepper_input_small shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
+										<div class="stepper_button stepper_button__small" onclick="updateStepper('plus', 'id90', true);">
+											+
+										</div>
+									</div>
+								</div>
+								<div class="button-remove button-remove_small ">
+								</div>
+								<div class="cart-item__total-price">
+									50 грн.
+								</div>
+							</div>
+						</div>
+						<div class="key-value">
+							<div class="key-value__key key-value__key_first key-value__value_border-top">
+								Вартість доставки
+							</div>
+							<div class="key-value__value">
+								50 грн.
+							</div>
+							<div class="key-value__key">
+								Загальна сума
+							</div>
+							<div class="key-value__value key-value__value_bold">
+								194 грн.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			
 			<!-- Main content -->
 			<div class="col-md-8">
@@ -185,89 +269,6 @@
 										<input class="form__button form__button_wide" name="orderbtn" type="submit" value="Оформити замовлення">
 									</form>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Right content -->
-			<div class="col-md-4">
-				<div class="content-right bg-white-transparent">
-					<div class="cart">
-						<div class="cart__title">
-							Ваше замовлення
-						</div>
-						<div class="cart-item">
-							<div class="cart-item__image">
-								<img class="cart-item__img" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/vareni_svynni.938ecab75924a6cabf1f17a4268f0cc8.jpg">
-							</div>
-							<div class="cart-item__content">
-								<div class="cart-item__name">
-									Сарделька 1
-								</div>
-								<div class="cart-item__price">
-									47 грн.
-								</div>
-								<div class="cart-item__count">
-									<div class="stepper">
-										<div class="stepper_button stepper_button__small" onclick="updateStepper('minus', 'id90', true);">
-											−
-										</div>
-										<input class="stepper_input stepper_input_small shk-count" type="number" name="count[]" id="id90" value="2" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
-										<div class="stepper_button stepper_button__small" onclick="updateStepper('plus', 'id90', true);">
-											+
-										</div>
-									</div>
-								</div>
-								<div class="button-remove button-remove_small">
-								</div>
-								<div class="cart-item__total-price">
-									92 грн.
-								</div>
-							</div>
-						</div>
-						<div class="cart-item">
-							<div class="cart-item__image">
-								<img class="cart-item__img" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
-							</div>
-							<div class="cart-item__content">
-
-								<div class="cart-item__name">
-									Сарделька 2
-								</div>
-								<div class="cart-item__price">
-									50 грн.
-								</div>
-								<div class="cart-item__count">
-									<div class="stepper">
-										<div class="stepper_button stepper_button__small" onclick="updateStepper('minus', 'id90', true);">
-											−
-										</div>
-										<input class="stepper_input stepper_input_small shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
-										<div class="stepper_button stepper_button__small" onclick="updateStepper('plus', 'id90', true);">
-											+
-										</div>
-									</div>
-								</div>
-								<div class="button-remove button-remove_small ">
-								</div>
-								<div class="cart-item__total-price">
-									50 грн.
-								</div>
-							</div>
-						</div>
-						<div class="key-value">
-							<div class="key-value__key key-value__key_first key-value__value_border-top">
-								Вартість доставки
-							</div>
-							<div class="key-value__value">
-								50 грн.
-							</div>
-							<div class="key-value__key">
-								Загальна сума
-							</div>
-							<div class="key-value__value key-value__value_bold">
-								194 грн.
 							</div>
 						</div>
 					</div>
