@@ -514,3 +514,8 @@ li.nav-main-dropdown-menu-item {
 	color: #f00;
 	font-size: 12px !important;
 }
+.success-message {
+	font-size: 14px;
+	color: #f00;
+	text-align: center;
+}
