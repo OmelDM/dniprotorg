@@ -8,6 +8,12 @@
 	border-bottom: 1px solid #777;
 	border-top: 1px solid #777;
 }
+.order-data__title_align_center {
+	text-align: center;
+}
+.order-data__title_large {
+	font-size: 20px;
+}
 .order-data__title_disabled {
 	color: #555;
 	opacity: .5;

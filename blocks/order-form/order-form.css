@@ -5,6 +5,9 @@
 	background: rgba(255, 255, 255, 0.7);
 	font-family: Helvetica;
 }
+.order-form_align_center {
+	text-align: center;
+}
 .order-form__top {
 	text-align: center;
 	margin: 0 0 10px 0;
