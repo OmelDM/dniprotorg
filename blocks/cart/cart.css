@@ -10,6 +10,9 @@
 	border-bottom: 1px solid #777;
 	border-top: 1px solid #777;
 }
+.cart__title_large {
+	font-size: 22px;
+}
 .cart-item {
 	margin: 15px 0;
 	position: relative;

@@ -18,7 +18,10 @@
 .form__button_wide {
 	width: 100%;
 }
-.form__button_last{
+.form__button_first {
+	margin-top: 10px;
+}
+.form__button_last {
 	margin-bottom: 10px;
 }
 .form__button:hover {
