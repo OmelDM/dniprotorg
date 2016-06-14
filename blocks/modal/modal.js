@@ -5,14 +5,18 @@ function openModalBlockWithID(anID) {
 		fadeBlocks[index].classList.add("fade_display");
 	}
 
-// 	var modalBlock = document.getElementById(anID);
-// 	// modalBlock.style.display = 'block';
-// 	modalBlock.dataset.modal = '0';
+	var modalBlock = document.getElementById(anID);
+	modalBlock.classList.add("modal-container_display");
 }
 
-function closeModalBlock() {
-	var fadeBlocks = document.getElementsByClassName("fade");
+function closeModalBlocks() {
+	var fadeBlocks = document.getElementsByClassName("fade_display");
 	for (var index = 0; index < fadeBlocks.length; index++) {
 		fadeBlocks[index].classList.remove("fade_display");
+	}
+
+	var modalBlocks = document.getElementsByClassName("modal-container_display");
+	for (var index = 0; index < modalBlocks.length; index++) {
+		modalBlocks[index].classList.remove("modal-container_display");
 	}
 }

@@ -5,7 +5,10 @@
 	left: 0;
 	right: 0;
 	z-index: 999;
-	
+	display: none;
+}
+.modal-container_display {
+	display: block;
 }
 .modal {
 	width: 75%;
@@ -45,7 +48,7 @@
 	min-width: 300px;
 }
 .fade {
-	display: block;
+	display: none;
 	background: rgba(0, 0, 0, 0.75);
 	position: fixed;
 	top: 0;

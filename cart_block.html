@@ -52,7 +52,7 @@
 							<span class="shop-cart-items-count">22</span>
 						</div>
 						<div class="shop-cart-order">
-							<a href="#" onClick="openModalBlockWithID('shop-cart-modal-id');return false;" class="shop-cart-buy">Кошик</a>
+							<a href="#" onClick="openModalBlockWithID('cart-modal-id');return false;" class="shop-cart-buy">Кошик</a>
 						</div>
 					</div>
 				</div>
@@ -154,13 +154,13 @@
 			</div>
 		</footer>
 		
-		<div class="fade" onclick="closeModalBlock(); return false;">
+		<div class="fade">
 		</div>
 
 		<!-- Modal cart -->
-		<div class="modal-container">
+		<div class="modal-container" id="cart-modal-id">
 			<div class="modal">
-				<div class="button-remove" onClick="closeModalWithID('shop-cart-modal-id'); return false;"></div>
+				<div class="button-remove" onclick="closeModalBlocks(); return false;"></div>
 				<div class="modal__title">
 					Кошик
 				</div>
