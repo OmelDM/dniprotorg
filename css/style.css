@@ -21,6 +21,7 @@ body {
 	width: 291px;
 	height: 251px;
 	margin-top: 10px;
+	margin-left: calc(50% - 145px);
 }
 .social-block {
 	display: inline-block;
@@ -171,6 +172,12 @@ li.nav-main-dropdown-menu-item {
 	position: absolute;
 	right: 15px;
 }
+.cart-container[data-modal='1'] .modal-block {
+  display: none;
+}
+.cart-container[data-modal='0'] .modal-block {
+  display: block;
+}
 .shop-cart {
 	display: inline-block;
 	position: absolute;
@@ -274,6 +281,9 @@ li.nav-main-dropdown-menu-item {
 	padding: 15px;
 	position: relative;
 	background: rgba(255, 255, 255, 0.7);
+}
+.product-link {
+	text-decoration: none;
 }
 .product-title {
 	text-decoration: none;
