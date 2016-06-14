@@ -94,3 +94,23 @@
 .cart-item__total-price:after {
 	clear: both;
 }
+@media (max-width: 1024px) {
+	.cart-item_large {
+		margin: 15px 0;
+		height: 65px;
+	}
+	.cart-item__img_large {
+		width: 100px;
+		height: 65px;
+	}
+	.cart-item__content_large {
+		margin: 0;
+		width: calc(100% - 105px);
+	}
+	.cart-item__name_large {
+		display: block;
+	}
+	.cart-item__price_large {
+		width: calc(100% - 162px - 110px - 20px - 15px - 20px);	
+	}
+}
