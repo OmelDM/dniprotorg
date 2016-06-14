@@ -1,0 +1,22 @@
+.table {
+	display: table;
+	width: 100%;
+	margin: 10px 0;
+}
+.table-row {
+	display: table-row;
+	line-height: 30px;
+}
+.table-row_align_center {
+	text-align: center;
+}
+.table-data {
+	display: table-cell;
+	width: 50%;
+}
+.table-data_align_right {
+	text-align: right;
+}
+.table-data_align_left {
+	text-align: left;
+}

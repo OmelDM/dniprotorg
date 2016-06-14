@@ -7,7 +7,6 @@
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<title>Title</title>
 </head>
@@ -47,133 +46,13 @@
 				<div class="shop-cart-empty">
 				</div>
 -->
-				<div class="cart-container" data-modal="1">
+				<div class="cart-container">
 					<div class="shop-cart" data-shopcart="1">
 						<div class="shop-cart-full">
 							<span class="shop-cart-items-count">22</span>
 						</div>
 						<div class="shop-cart-order">
-							<a href="#" onClick="openModalWithID('shop-cart-modal-id');return false;" class="shop-cart-buy">Кошик</a>
-						</div>
-
-						<div id="shop-cart-modal-id" class="modal-block">
-							<div class="cart-content cart-content-modal">
-								<div  class="button-remove" onClick="closeModalWithID('shop-cart-modal-id'); return false;"></div>
-								<div class="cart-title">
-									Ваш кошик
-									<a name="shopCart"></a>
-								</div>
-								<form action="http://babystreet.kiev.ua/testdev/koshyk/#shopCart" id="shopOrderForm" method="post">
-									<div class="form-overflow">
-										<table class="cart-content-table form-overflow">
-											<thead class="cart-content-table-head">
-												<tr>
-													<th colspan="2">Продукт</th>
-													<th>Ціна</th>
-													<th>Кількість</th>
-													<th colspan="2">Разом</th>
-												</tr>
-											</thead>
-											<tbody class="cart-content-table-body">
-												<tr>
-													<td><img class="cart-content-image" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/myasni.41d8c3b89f0e6b27449a1fd3b6b4264e.jpg"></td>
-													<td><a href="#">Сарделька 2</a></td>
-													<td>55.6 грн.</td>
-													<td>
-														<div class="product-buy-button" onclick="updateSpinner('minus', 'id90', true);">
-															−
-														</div>
-														<input class="product-buy-text shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
-														<div class="product-buy-button" onclick="updateSpinner('plus', 'id90', true);">
-															+
-														</div>
-													</td>
-													<td>55.60 грн.</td>
-													<td>
-														<div class="button-remove button-remove_small">
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td><img class="cart-content-image" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/vareni_shpykachky.41d8c3b89f0e6b27449a1fd3b6b4264e.jpg"></td>
-													<td><a href="#">Сарделька 3</a></td>
-													<td>86.55 грн.</td>
-													<td>
-														<div class="product-buy-button" onclick="updateSpinner('minus', 'id90', true);">
-															−
-														</div>
-														<input class="product-buy-text shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
-														<div class="product-buy-button" onclick="updateSpinner('plus', 'id90', true);">
-															+
-														</div>
-													</td>
-													<td>55.60 грн.</td>
-													<td>
-														<div class="button-remove button-remove_small">
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td><img class="cart-content-image" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/vareni_shpykachky.41d8c3b89f0e6b27449a1fd3b6b4264e.jpg"></td>
-													<td><a href="#">Сарделька 3</a></td>
-													<td>86.55 грн.</td>
-													<td>
-														<div class="product-buy-button" onclick="updateSpinner('minus', 'id90', true);">
-															−
-														</div>
-														<input class="product-buy-text shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
-														<div class="product-buy-button" onclick="updateSpinner('plus', 'id90', true);">
-															+
-														</div>
-													</td>
-													<td>55.60 грн.</td>
-													<td>
-														<div class="button-remove button-remove_small">
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td><img class="cart-content-image" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/vareni_shpykachky.41d8c3b89f0e6b27449a1fd3b6b4264e.jpg"></td>
-													<td><a href="#">Сарделька 3</a></td>
-													<td>86.55 грн.</td>
-													<td>
-														<div class="product-buy-button" onclick="updateSpinner('minus', 'id90', true);">
-															−
-														</div>
-														<input class="product-buy-text shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
-														<div class="product-buy-button" onclick="updateSpinner('plus', 'id90', true);">
-															+
-														</div>
-													</td>
-													<td>55.60 грн.</td>
-													<td>
-														<div class="button-remove button-remove_small">
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="cart-order">
-										<div class="cart-order-continue">
-											<a href="#" onClick="closeModalWithID('shop-cart-modal-id');return false;" class="continue-button">Продовжити покупки</a>
-										</div>
-										<div class="cart-order-price">
-											<table class="cart-order-price-table">
-												<tbody>
-													<tr>
-														<td>Загальна сума:</td>
-														<td class="price-total-data">55.60 грн.</td>
-													</tr>
-													<tr>
-														<td colspan="2"><a href="#" class="checkout-button">Оформити замовлення</a></td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</form>
-							</div>
+							<a href="#" onClick="openModalBlockWithID('shop-cart-modal-id');return false;" class="shop-cart-buy">Кошик</a>
 						</div>
 					</div>
 				</div>
@@ -275,67 +154,187 @@
 			</div>
 		</footer>
 		
-	</div>
+		<div class="fade" onclick="closeModalBlock(); return false;">
+		</div>
 
-	<!-- <div id="shop-cart-modal-id" class="modal-block">
-		<div class="cart-content cart-content-modal" data-shopcart="2">
-			<div  class="button-remove" onClick="closeModalWithID('shop-cart-modal-id'); return false;"></div>
-			<div class="cart-title">
-				Ваш кошик
-				<a name="shopCart"></a>
-			</div>
-			<form action="http://babystreet.kiev.ua/testdev/koshyk/#shopCart" id="shopOrderForm" method="post">
-				<table class="cart-content-table">
-					<thead class="cart-content-table-head">
-						<tr>
-							<th colspan="2">Продукт</th>
-							<th>Ціна</th>
-							<th>Кількість</th>
-							<th colspan="2">Разом</th>
-						</tr>
-					</thead>
-					<tbody class="cart-content-table-body">
-														<tr>
-							<td></td>
-							<td><a href="#">Сарделька 2</a></td>
-							<td>55.6 грн.</td>
-							<td>
-								<div class="product-buy-button" onclick="updateSpinner('minus', 'id90', true);">
-									−
+		<!-- Modal cart -->
+		<div class="modal-container">
+			<div class="modal">
+				<div class="button-remove" onClick="closeModalWithID('shop-cart-modal-id'); return false;"></div>
+				<div class="modal__title">
+					Кошик
+				</div>
+
+				<div class="cart modal-content">
+						
+					<div class="cart-item cart-item_large">
+						<div class="cart-item__image">
+							<img class="cart-item__img cart-item__img_large" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
+						</div>
+						<div class="cart-item__content cart-item__content_large">
+
+							<div class="cart-item__name cart-item__name_large">
+								<a href="#" class="order-form__link">
+									Мясо
+								</a>
+							</div>
+							<div class="cart-item__price cart-item__price_large">
+								50 грн.
+							</div>
+							<div class="cart-item__count cart-item__count_large">
+								<div class="stepper">
+									<div class="stepper_button" onclick="updateStepper('minus', 'id90', true);">
+										−
+									</div>
+									<input class="stepper_input shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
+									<div class="stepper_button" onclick="updateStepper('plus', 'id90', true);">
+										+
+									</div>
 								</div>
-								<input class="product-buy-text shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
-								<div class="product-buy-button" onclick="updateSpinner('plus', 'id90', true);">
-									+
+							</div>
+							<a href="#del" class="button-remove button-remove_middle"></a>
+							<div class="cart-item__total-price cart-item__total-price_large">
+								500 грн.
+							</div>
+						</div>
+					</div>
+					
+					<div class="cart-item cart-item_large">
+						<div class="cart-item__image">
+							<img class="cart-item__img cart-item__img_large"  src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
+						</div>
+						<div class="cart-item__content cart-item__content_large">
+
+							<div class="cart-item__name cart-item__name_large">
+								<a href="#" class="order-form__link">
+									Сарделька 2
+								</a>
+							</div>
+							<div class="cart-item__price cart-item__price_large">
+								50 грн.
+							</div>
+							<div class="cart-item__count cart-item__count_large">
+								<div class="stepper">
+									<div class="stepper_button" onclick="updateStepper('minus', 'id90', true);">
+										−
+									</div>
+									<input class="stepper_input shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
+									<div class="stepper_button" onclick="updateStepper('plus', 'id90', true);">
+										+
+									</div>
 								</div>
-							</td>
-							<td>55.60 грн.</td>
-							<td>
-								<div class="button-remove button-remove_small">
+							</div>
+							<a href="#del" class="button-remove button-remove_middle"></a>
+							<div class="cart-item__total-price cart-item__total-price_large">
+								50 грн.
+							</div>
+						</div>
+					</div>
+					
+					<div class="cart-item cart-item_large">
+						<div class="cart-item__image">
+							<img class="cart-item__img cart-item__img_large"  src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
+						</div>
+						<div class="cart-item__content cart-item__content_large">
+
+							<div class="cart-item__name cart-item__name_large">
+								<a href="#" class="order-form__link">
+									Ковбаса копчена
+								</a>
+							</div>
+							<div class="cart-item__price cart-item__price_large">
+								112 грн.
+							</div>
+							<div class="cart-item__count cart-item__count_large">
+								<div class="stepper">
+									<div class="stepper_button" onclick="updateStepper('minus', 'id90', true);">
+										−
+									</div>
+									<input class="stepper_input shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
+									<div class="stepper_button" onclick="updateStepper('plus', 'id90', true);">
+										+
+									</div>
 								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<div class="cart-order">
-					<div class="cart-order-price">
-					<table class="cart-order-price-table">
-						<tbody><tr>
-							<td>Вартість доставки:</td>
-							<td class="price-data">0 грн.</td>
-						</tr>
-						<tr>
-							<td>Загальна сума:</td>
-							<td class="price-total-data">55.60 грн.</td>
-						</tr>
-					</tbody></table>
+							</div>
+							<a href="#del" class="button-remove button-remove_middle"></a>
+							<div class="cart-item__total-price cart-item__total-price_large">
+								224 грн.
+							</div>
+						</div>
+					</div>
+					
+					<div class="cart-item cart-item_large">
+						<div class="cart-item__image">
+							<img class="cart-item__img cart-item__img_large"  src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
+						</div>
+						<div class="cart-item__content cart-item__content_large">
+
+							<div class="cart-item__name cart-item__name_large">
+								<a href="#" class="order-form__link">
+									Сарделька 2
+								</a>
+							</div>
+							<div class="cart-item__price cart-item__price_large">
+								50 грн.
+							</div>
+							<div class="cart-item__count cart-item__count_large">
+								<div class="stepper">
+									<div class="stepper_button" onclick="updateStepper('minus', 'id90', true);">
+										−
+									</div>
+									<input class="stepper_input shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
+									<div class="stepper_button" onclick="updateStepper('plus', 'id90', true);">
+										+
+									</div>
+								</div>
+							</div>
+							<a href="#del" class="button-remove button-remove_middle"></a>
+							<div class="cart-item__total-price cart-item__total-price_large">
+								50 грн.
+							</div>
+						</div>
 					</div>
 				</div>
-			</form>
+
+				<div class="modal-footer">
+					<div class="modal-footer__left">
+						<a href="#catalog" class="order-form__link order-form__link_gray">
+							Продовжити покупки
+						</a>
+					</div>
+					<div class="modal-footer__fill">
+					</div>
+					<div class="modal-footer__right">
+						<div class="cart-info">
+							<div class="table">
+								<div class="table-row">
+									<div class="table-data table-data_align_left">
+										Вартість доставки
+									</div>
+									<div class="table-data table-data_align_right">
+										50 грн.
+									</div>
+								</div>
+								<div class="table-row">
+									<div class="table-data table-data_align_left">
+										Загальна сума
+									</div>
+									<div class="table-data table-data_align_right">
+										194 грн.
+									</div>
+								</div>
+							</div>
+							<div class="form__button form__button_wide">
+								Оформити замовлення
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="js/owl.carousel.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$(document).ready(function() {

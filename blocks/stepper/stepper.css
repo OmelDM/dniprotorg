@@ -10,11 +10,15 @@
 	cursor: pointer;
 	border: 1px solid #ccc;
 	background: #fff;
+	width: 27px;
+	height: 30px;
 }
 .stepper_button__small {
 	font-size: 12px;
 	margin: 0 0;
 	padding: 1px 4px;
+	width: 17px;
+	height: 18px;
 }
 .stepper_button:hover {
 	color: #fff;
