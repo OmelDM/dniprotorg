@@ -84,7 +84,51 @@
 			<div class="col-lg-12 bg-white-transparent">
 				<h1>Авторизація</h1>
 				
-				<div class="order-form">
+				<div class="row order-form">
+					<div class="col-lg-6">
+						<div class="form form_display" id="form_login">
+							<form>
+								<div class="key-value">
+									<div class="key-value__key key-value__key_first">
+										<label for="email">Ел. пошта</label>
+									</div>
+									<div class="key-value__value">
+										<input id="email" class="form__input" name="email:email" type="text" value="">
+									</div>
+									<div class="key-value__key">
+										<label for="password">Пароль</label>
+									</div>
+									<div class="key-value__value key-value__value_last">
+										<input id="password" class="form__input" name="password:password" type="password" value="">
+									</div>
+								</div>
+								<input class="form__button form__button_wide form__button_last" name="loginbtn" type="submit" value="Увійти">
+								<br>
+								<a href="#" onClick="showIDWithParent('form_forgot_login', 'form_display'); return false;" class="order-form__link order-form__link_gray">Я забув пароль</a>
+							</form>
+						</div>
+						<div class="form form_display form_display_hidden" id="form_forgot_login">
+							<form>
+								<div class="key-value">
+									<div class="key-value__key key-value__key_first">
+										<label for="email">Ел. пошта</label>
+									</div>
+									<div class="key-value__value key-value__value_last">
+										<input id="email" class="form__input" name="email:email" type="text" value="">
+									</div>
+								</div>
+								<input class="form__button form__button_wide form__button_last" name="loginbtn" type="submit" value="Відновити пароль">
+								<a href="#" onClick="showIDWithParent('form_login', 'form_display'); return false;" class="order-form__link order-form__link_gray">Я згадав пароль</a>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-6 text-center fb-login">
+						Увійти як користувач
+					</div>
+				</div>
+
+
+<!-- 				<div class="order-form">
 					<div class="form form_display" id="form_login">
 						<form>
 							<div class="key-value">
@@ -120,7 +164,7 @@
 							<a href="#" onClick="showIDWithParent('form_login', 'form_display'); return false;" class="order-form__link order-form__link_gray">Я згадав пароль</a>
 						</form>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		
