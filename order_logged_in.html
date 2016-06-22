@@ -199,11 +199,22 @@
 									<div class="key-value__key">
 										Телефон
 									</div>
-									<div class="key-value__value key-value__value_border-bottom key-value__value_last">
+									<div class="key-value__value key-value__value_border-bottom">
 										+38 (012) 123-45-67
 									</div>
+									<div class="key-value__key">
+										Адреса
+									</div>
+									<div class="key-value__value">
+										<input name="address" id="address" class="form__input" type="text" value="Хрещатик, 22">
+										<a href="#change-address" onClick="showIDWithParent('change-address', 'change-address'); return false;" class="order-form__link order-form__link_small order-form__link_gray">Вибрати адресу</a>
+										<div id="change-address" class="change-address form_display_hidden">
+											<input type="radio" onchange="changeAddressForID('address', this); return false;" name="change-address" value="address1"> Адреса 1<br>
+											<input type="radio" onchange="changeAddressForID('address', this); return false;" name="change-address" value="address2"> Адреса 2<br>
+											<input type="radio" onchange="changeAddressForID('address', this); return false;" name="change-address" value="address3"> Адреса 3
+										</div>
+									</div>
 								</div>
-								<a href="#user-profile" class="order-form__link order-form__link_gray">Змінити дані</a>
 							</div>
 						</div>
 						<div class="order-data">
