@@ -290,6 +290,9 @@ li.nav-main-dropdown-menu-item {
 	color: #660000;
 	font-size: 30px;
 }
+.product-title_small {
+	font-size: 22px;
+}
 .product-image {
 	display: inline-block;
 	width: 255px;
