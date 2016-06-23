@@ -1,4 +1,5 @@
 function updateStepper(anAction, anID, anUpdateCount) {
+	"use strict";
 
 	if (undefined === anUpdateCount) {
 		anUpdateCount = false;
@@ -23,7 +24,7 @@ function updateStepper(anAction, anID, anUpdateCount) {
 
 	stepper.value = value;
 	
-	if (true == anUpdateCount) {
+	if (true === anUpdateCount) {
 		SHK.changeCartItemsCount();
 	}
 }

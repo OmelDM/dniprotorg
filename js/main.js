@@ -1,4 +1,5 @@
 function updateSpinner(anAction, anID, anUpdateCount) {
+	"use strict";
 
 	if (undefined === anUpdateCount) {
 		anUpdateCount = false;
@@ -23,16 +24,20 @@ function updateSpinner(anAction, anID, anUpdateCount) {
 
 	spinner.value = value;
 	
-	if (true == anUpdateCount) {
+	if (true === anUpdateCount) {
 		SHK.changeCartItemsCount();
 	}
 }
 function openModalWithID(anID) {
+	"use strict";
+
 	var modalBlock = document.getElementById(anID).parentElement.parentElement;
 	// modalBlock.style.display = 'block';
 	modalBlock.dataset.modal = '0';
 }
 function closeModalWithID(anID) {
+	"use strict";
+
 	var modalBlock = document.getElementById(anID).parentElement.parentElement;
 	// modalBlock.style.display = 'none';
 	modalBlock.dataset.modal = '1';

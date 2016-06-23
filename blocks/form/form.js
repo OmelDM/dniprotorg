@@ -1,11 +1,12 @@
 function showIDWithParent(anID, aParentClass) {
+	"use strict";
+
 	var allForms = document.getElementsByClassName(aParentClass);
 	var formToShow = document.getElementById(anID);
 
 	for (var index = 0; index < allForms.length; index++) {
 		if (allForms[index] === formToShow) {
 			formToShow.classList.remove("form_display_hidden");
-			var obj = this;
 			continue;
 		}
 		allForms[index].classList.add("form_display_hidden");
@@ -13,6 +14,8 @@ function showIDWithParent(anID, aParentClass) {
 }
 
 function makeDimmed(anObject) {
+	"use strict";
+
 	var allGrayed = document.getElementsByClassName("order-form__link_dimmed");
 
 	for (var index = 0; index < allGrayed.length; index++) {
@@ -25,6 +28,8 @@ function makeDimmed(anObject) {
 }
 
 function selectWithIDWithParent(anID, aParentClass) {
+	"use strict";
+
 	var select = document.getElementById(anID);
 	var selectedOption = select.options.item(select.selectedIndex);
 	var IDToShow = selectedOption.dataset.id;
@@ -33,6 +38,8 @@ function selectWithIDWithParent(anID, aParentClass) {
 }
 
 function changeAddressForID(anID, aSender) {
+	"use strict";
+
 	var address = document.getElementById(anID);
 	address.value = aSender.value;
 }
