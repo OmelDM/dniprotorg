@@ -200,6 +200,7 @@ li.nav-main-dropdown-menu-item {
 	min-width: 48px;
 	min-height: 40px;
 	padding: 10px;
+	text-align: center;
 }
 .shop-cart-full::before {
 	content: '';
@@ -278,7 +279,6 @@ li.nav-main-dropdown-menu-item {
 	margin: 20px;
 	width: 285px;
 	height: 250px;
-	padding: 15px;
 	position: relative;
 	background: rgba(255, 255, 255, 0.7);
 }
@@ -289,6 +289,11 @@ li.nav-main-dropdown-menu-item {
 	text-decoration: none;
 	color: #660000;
 	font-size: 30px;
+	display: block;
+	position: absolute;
+	top: 10px;
+	bottom: -5px;
+	overflow: hidden;
 }
 .product-title_small {
 	font-size: 22px;
@@ -468,5 +473,11 @@ li.nav-main-dropdown-menu-item {
 }
 .breadcrumbs {
 	padding: 5px 15px;
-	font-size: 18px;
+	font-size: 20px;
+	padding-left: 110px;
+}
+@media (max-width: 476px) {
+	.breadcrumbs {
+		padding-left: 55px;
+	}
 }
