@@ -1,0 +1,33 @@
+.auth {
+	display: inline-block;
+	position: absolute;
+	right: 120px;
+	font-family: Helvetica;
+}
+.auth__button {
+	color: #660000;
+	text-decoration: none;
+}
+.auth__button:hover {
+	text-decoration: underline;
+}
+.auth__button_logged-in::before {
+	content: '';
+	position: absolute;
+	left: -25px;
+	width: 16px;
+	height: 16px;
+	background: url(http://www.icons101.com/icon_png/size_32/id_66855/person.png);
+	/*background: url('../images/person.png');*/
+	background-size: cover;
+}
+@media (max-width: 992px) {
+	.auth {
+		display: block;
+		position: static;
+		text-align: center;
+	}
+	.auth__button_logged-in::before {
+		background: none;
+	}
+}

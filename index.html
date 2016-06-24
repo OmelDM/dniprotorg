@@ -7,7 +7,6 @@
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<title>Title</title>
 </head>
@@ -28,60 +27,243 @@
 	<div class="container">
 		<!-- Header -->
 		<header class="row">
-			<div class="col-lg-12 text-center">
+			<div class="col-lg-12">
 				<!-- Login\Registr	 -->
-<!--			<div class="login-registr">
-					<a href="#" class="login-register-button">Увійти</a> / <a href="#" class="login-register-button">Зареєструватися</a>
+<!--			<div class="auth">
+					<a href="#" class="auth__button">Увійти</a> / <a href="#" class="auth__button">Зареєструватися</a>
 				</div>
 -->
-				<div class="login-register">
-					<a href="#" class="login-register-button person-before" title="Персональний кабінет">Джон Сміт</a> (<a href="#" class="login-register-button">вийти</a>)
+				<div class="auth">
+					<a href="#" class="auth__button auth__button_logged-in" title="Персональний кабінет">Джон Сміт</a> (<a href="#" class="auth__button">вийти</a>)
 				</div>
+
 				<div class="logo">
 					<a href="#">
 						<img src="images/logo.png" alt="">
 					</a>
 				</div>
 				<!-- Shop cart -->
-<!--			
-				<div class="shop-cart-empty">
-				</div>
--->
-				<div class="shop-cart">
-					<div class="shop-cart-full" data-shopcart="1">
-						<span class="shop-cart-items-count">22</span>
+			
+<!-- 				<div class="cart-small cart-small_empty">
+				</div> -->
+
+				<div class="cart-small" data-shopcart="1">
+					<div class="cart-small__count">
+						22
 					</div>
-					<div class="shop-cart-order">
-						<a href="#" class="shop-cart-buy">Оформити</a>
+					<div class="cart-small__title">
+						<a href="#" onClick="openModalWithID('shop-cart-modal-id');return false;" class="cart-small__link shadow">Кошик</a>
+					</div>
+
+					<div id="shop-cart-modal-id" class="modal-container">
+						<form class="modal" action="#" id="shopOrderForm" method="post">
+							<div class="button-remove" onclick="closeModalWithID('shop-cart-modal-id'); return false;"></div>
+							<div class="modal__title">
+								Кошик
+							</div>
+
+							<div class="cart modal-content">
+									
+								<div class="cart-item cart-item_large">
+									<div class="cart-item__image">
+										<img class="cart-item__img cart-item__img_large" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
+									</div>
+									<div class="cart-item__content cart-item__content_large">
+
+										<div class="cart-item__name cart-item__name_large">
+											<a href="#" class="order-form__link">
+												Мясо
+											</a>
+										</div>
+										<div class="cart-item__price cart-item__price_large">
+											50 грн.
+										</div>
+										<div class="cart-item__count cart-item__count_large">
+											<div class="stepper">
+												<div class="stepper_button" onclick="updateStepper('minus', 'id90', true);">
+													−
+												</div>
+												<input class="stepper_input shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
+												<div class="stepper_button" onclick="updateStepper('plus', 'id90', true);">
+													+
+												</div>
+											</div>
+										</div>
+										<a href="#del" class="button-remove button-remove_middle"></a>
+										<div class="cart-item__total-price cart-item__total-price_large">
+											500 грн.
+										</div>
+									</div>
+								</div>
+								
+								<div class="cart-item cart-item_large">
+									<div class="cart-item__image">
+										<img class="cart-item__img cart-item__img_large"  src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
+									</div>
+									<div class="cart-item__content cart-item__content_large">
+
+										<div class="cart-item__name cart-item__name_large">
+											<a href="#" class="order-form__link">
+												Сарделька 2
+											</a>
+										</div>
+										<div class="cart-item__price cart-item__price_large">
+											50 грн.
+										</div>
+										<div class="cart-item__count cart-item__count_large">
+											<div class="stepper">
+												<div class="stepper_button" onclick="updateStepper('minus', 'id90', true);">
+													−
+												</div>
+												<input class="stepper_input shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
+												<div class="stepper_button" onclick="updateStepper('plus', 'id90', true);">
+													+
+												</div>
+											</div>
+										</div>
+										<a href="#del" class="button-remove button-remove_middle"></a>
+										<div class="cart-item__total-price cart-item__total-price_large">
+											50 грн.
+										</div>
+									</div>
+								</div>
+								
+								<div class="cart-item cart-item_large">
+									<div class="cart-item__image">
+										<img class="cart-item__img cart-item__img_large"  src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
+									</div>
+									<div class="cart-item__content cart-item__content_large">
+
+										<div class="cart-item__name cart-item__name_large">
+											<a href="#" class="order-form__link">
+												Ковбаса копчена
+											</a>
+										</div>
+										<div class="cart-item__price cart-item__price_large">
+											112 грн.
+										</div>
+										<div class="cart-item__count cart-item__count_large">
+											<div class="stepper">
+												<div class="stepper_button" onclick="updateStepper('minus', 'id90', true);">
+													−
+												</div>
+												<input class="stepper_input shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
+												<div class="stepper_button" onclick="updateStepper('plus', 'id90', true);">
+													+
+												</div>
+											</div>
+										</div>
+										<a href="#del" class="button-remove button-remove_middle"></a>
+										<div class="cart-item__total-price cart-item__total-price_large">
+											224 грн.
+										</div>
+									</div>
+								</div>
+								
+								<div class="cart-item cart-item_large">
+									<div class="cart-item__image">
+										<img class="cart-item__img cart-item__img_large"  src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
+									</div>
+									<div class="cart-item__content cart-item__content_large">
+
+										<div class="cart-item__name cart-item__name_large">
+											<a href="#" class="order-form__link">
+												Сарделька 2
+											</a>
+										</div>
+										<div class="cart-item__price cart-item__price_large">
+											50 грн.
+										</div>
+										<div class="cart-item__count cart-item__count_large">
+											<div class="stepper">
+												<div class="stepper_button" onclick="updateStepper('minus', 'id90', true);">
+													−
+												</div>
+												<input class="stepper_input shk-count" type="number" name="count[]" id="id90" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
+												<div class="stepper_button" onclick="updateStepper('plus', 'id90', true);">
+													+
+												</div>
+											</div>
+										</div>
+										<a href="#del" class="button-remove button-remove_middle"></a>
+										<div class="cart-item__total-price cart-item__total-price_large">
+											50 грн.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="modal-footer__left">
+									<a href="#catalog" class="order-form__link order-form__link_gray" onclick="closeModalBlocks(); return false;">
+										Продовжити покупки
+									</a>
+								</div>
+								<div class="modal-footer__fill">
+								</div>
+								<div class="modal-footer__right">
+									<div class="cart-info">
+										<div class="table">
+											<div class="table-row">
+												<div class="table-data table-data_align_left">
+													Вартість доставки
+												</div>
+												<div class="table-data table-data_align_right">
+													50 грн.
+												</div>
+											</div>
+											<div class="table-row">
+												<div class="table-data table-data_align_left">
+													Загальна сума
+												</div>
+												<div class="table-data table-data_align_right">
+													194 грн.
+												</div>
+											</div>
+										</div>
+										<a href="#" class="form__button form__button_wide">
+											Оформити замовлення
+										</a>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
-				<!-- Social -->
-				<div class="social-block bg-white-transparent hidden-xs hidden-sm">
-					<span class="">Ми в мережі Facebook: </span>
-					<a href="https://www.facebook.com/dniprotorg/" target="_blank">
-						<img class="social-block-fb-logo" src="images/fb-logo.jpg" alt="">
+
+
+				<div class="side-menu">
+					<a href="#" class="side-menu__vacancy shadow-gray bg-white-transparent">
+						Наші вакансії
 					</a>
+					<div class="side-menu__fb shadow-gray bg-white-transparent">
+						<span class="">Ми в мережі Facebook: </span>
+						<a href="https://www.facebook.com/dniprotorg/" target="_blank">
+							<img class="side-menu__fb-logo" src="images/fb-logo.jpg" alt="">
+						</a>
+					</div>
 				</div>
+				
 			</div>
 		</header>
 		
 		<!-- Navigation -->
 		<nav class="row">
-			<div class="col-lg-12 text-center">
-				<ul class="nav-main">
-					<li><a href="#">Головна</a></li>
-					<li class="nav-main-dropdown"><a href="#">Продукція</a>
-							<ul class="nav-main-dropdown-menu">
-								<li class="nav-main-dropdown-menu-item"><a href="#">М'ясо</a></li>
-								<li class="nav-main-dropdown-menu-item"><a href="#">Ковбаси</a></li>
-								<li class="nav-main-dropdown-menu-item"><a href="#">М'ясні делікатеси</a></li>
-								<li class="nav-main-dropdown-menu-item"><a href="#">Напівфабрикати</a></li>
+			<div class="col-lg-12">
+				<ul class="navigation">
+					<li class="navigation__item shadow"><a href="#" class="navigation__link">Головна</a></li>
+					<li class="navigation__item shadow navigation__dropdown"><a href="#" class="navigation__link">Продукція</a>
+							<ul class="navigation__dropdown-container">
+								<li class="navigation__item shadow navigation__dropdown-item"><a href="#" class="navigation__link">М'ясо</a></li>
+								<li class="navigation__item shadow navigation__dropdown-item"><a href="#" class="navigation__link">Ковбаси</a></li>
+								<li class="navigation__item shadow navigation__dropdown-item"><a href="#" class="navigation__link">М'ясні делікатеси</a></li>
+								<li class="navigation__item shadow navigation__dropdown-item"><a href="#" class="navigation__link">Напівфабрикати</a></li>
 							</ul>
 					</li>
-					<li><a href="#">Магазини</a></li>
-					<li><a href="#">Акції</a></li>
-					<li><a href="#">Новини</a></li>
-					<li><a href="#">Контакти</a></li>
+					<li class="navigation__item shadow"><a href="#" class="navigation__link">Магазини</a></li>
+					<li class="navigation__item shadow"><a href="#" class="navigation__link">Акції</a></li>
+					<li class="navigation__item shadow"><a href="#" class="navigation__link">Новини</a></li>
+					<li class="navigation__item shadow"><a href="#" class="navigation__link">Контакти</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -164,7 +346,7 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="js/owl.carousel.js"></script>
+	<script src="js/main.js"></script>
 	<script>
 		$(document).ready(function() {
 			var owl = $('.owl-carousel');

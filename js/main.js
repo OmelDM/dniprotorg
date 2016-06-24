@@ -28,17 +28,3 @@ function updateSpinner(anAction, anID, anUpdateCount) {
 		SHK.changeCartItemsCount();
 	}
 }
-function openModalWithID(anID) {
-	"use strict";
-
-	var modalBlock = document.getElementById(anID).parentElement.parentElement;
-	// modalBlock.style.display = 'block';
-	modalBlock.dataset.modal = '0';
-}
-function closeModalWithID(anID) {
-	"use strict";
-
-	var modalBlock = document.getElementById(anID).parentElement.parentElement;
-	// modalBlock.style.display = 'none';
-	modalBlock.dataset.modal = '1';
-}

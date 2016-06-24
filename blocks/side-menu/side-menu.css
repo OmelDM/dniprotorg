@@ -1,0 +1,59 @@
+.side-menu {
+	display: inline-block;
+	position: absolute;
+	right: 15px;
+	bottom: 0;
+	margin: 10px 0 0 0;
+}
+@media (max-width: 630px) {
+	.side-menu  {
+		display: block;
+		position: static;
+	}
+	.side-menu__vacancy::after {
+		display: none;
+	}
+}
+.side-menu__fb {
+	padding: 5px 10px;
+	border-radius: 3px;
+	text-align: center;
+}
+.side-menu__fb-logo {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #fff;
+	vertical-align: middle;
+	opacity: 0.75;
+}
+.side-menu__fb-logo:hover {
+	opacity: 1;
+}
+.side-menu__vacancy {
+	display: inline-block;
+	position: relative;
+	margin: 0 0 15px 0;
+	padding: 8px 30px 8px 8px;
+	width: 100%;
+	border: 1px solid #660000;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #660000;
+}
+.side-menu__vacancy:hover {
+	background: #fff;
+}
+.side-menu__vacancy::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    width: 32px;
+    height: 32px;
+    background: url(https://cdn4.iconfinder.com/data/icons/business-men-women-set-2/512/26-512.png);
+    /*background: url(../../images/vacancy.png);*/
+    background-size: cover;
+}
