@@ -1,0 +1,10 @@
+.slider {
+	max-width: 900px;
+	margin: 0 auto;
+	float: none;
+}
+.slider__item {
+	display: block;
+	width: 100%;
+	height: auto;
+}

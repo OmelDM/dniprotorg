@@ -46,7 +46,6 @@ body {
 .shadow-gray {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
-
 /*
 
 	OLD Staff
@@ -90,11 +89,6 @@ body {
 	.content-main {
 		margin-right: 0;
 	}
-}
-.animal-img {
-	display: inline-block;
-	opacity: 0.7;
-	margin-right: 40px;
 }
 /*
 	Products

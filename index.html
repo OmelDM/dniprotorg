@@ -270,22 +270,32 @@
 		
 		<!-- Slider -->
 		<div class="row">
-			<div class="col-lg-12 owl-carousel">
-				<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/02.6fd478f86bc9a1ee0de0d4924f5798fc.jpg" alt="">
-				<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/04.cc442206c66d690f3e992edab476a9ba.jpg" alt="">
-				<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/09.d2a9c3dbf59c739b4ed192361675778b.jpg" alt="">
-				<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/o-THANKSGIVING-WITHOUT-EX-facebook.dbfafd6a014a39795f1135a81e9d3d86.jpg"  alt="">
-				<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/slaider.cc4fb21f2b19b2078f9bcc876bca4e7c.jpg" alt="">
+			<div class="col-lg-12 owl-carousel slider">
+				<div class="slider__item">
+					<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/02.6fd478f86bc9a1ee0de0d4924f5798fc.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/04.cc442206c66d690f3e992edab476a9ba.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/09.d2a9c3dbf59c739b4ed192361675778b.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/o-THANKSGIVING-WITHOUT-EX-facebook.dbfafd6a014a39795f1135a81e9d3d86.jpg"  alt="">
+				</div>
+				<div class="slider__item">
+					<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/slaider.cc4fb21f2b19b2078f9bcc876bca4e7c.jpg" alt="">
+				</div>
 			</div>
 		</div>
 	
 		<!-- Animals -->
 		<div class="row">
-			<div class="col-lg-12 text-center">
-				<img src="images/pig.png" class="animal-img hidden-xxs" alt="">
-				<img src="images/chiken.png" class="animal-img hidden-xxs" alt="">
-				<img src="images/cow.png" class="animal-img visible-lg-inline-block visible-md-inline-block visible-sm-inline-block" alt="">
-				<img src="images/turkey.png" class="animal-img visible-lg-inline-block visible-md-inline-block" alt="">
+			<div class="col-lg-12 animals">
+				<img src="images/pig.png" class="animals__item hidden-xxs" alt="">
+				<img src="images/chiken.png" class="animals__item hidden-xxs" alt="">
+				<img src="images/cow.png" class="animals__item visible-lg-inline-block visible-md-inline-block visible-sm-inline-block" alt="">
+				<img src="images/turkey.png" class="animals__item visible-lg-inline-block visible-md-inline-block" alt="">
 			</div>
 		</div>
 		
@@ -347,29 +357,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		$(document).ready(function() {
-			var owl = $('.owl-carousel');
-			owl.owlCarousel({
-				autoplay: true,
-				autoplayTimeout: 5000,
-				autoplaySpeed: 1000,
-				margin: 10,
-				loop: true,
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 2
-					},
-					1000: {
-						items: 3
-					}
-				}
-			})
-		})
-	</script>
 <!--
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
