@@ -12,7 +12,7 @@
 		position: static;
 		width: 100%;
 	}
-	.side-menu__vacancy::after {
+	.side-menu__item::after {
 		display: none;
 	}
 }
