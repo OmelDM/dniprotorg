@@ -17,24 +17,6 @@ body {
 	margin-top: 10px;
 	margin-left: calc(50% - 145px);
 }
-.title {
-	padding: 15px 0;
-	font-size: 24px;
-}
-.partners {
-	text-align: center;
-	padding: 10px 0;
-}
-.partners__image {
-	margin: 10px;
-	padding: 10px 6px;
-	border: 1px solid #eee;
-	opacity: .85;
-}
-.partners__image:hover {
-	border: 1px solid #ccc;
-	opacity: 1;
-}
 .copyrights {
 	text-align: center;
 	padding: 15px 0;
