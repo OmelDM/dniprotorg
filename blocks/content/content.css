@@ -1,0 +1,19 @@
+.content {
+	padding: 10px 15px;
+}
+.content_align_center {
+	text-align: center;
+}
+.content__title {
+	padding: 10px 15px;
+	text-align: center;
+	font-size: 26px;
+}
+.content__text p {
+	font-size: 18px;
+	text-align: justify;
+	text-indent: 20px;
+	margin-top: 0.4em;
+	margin-bottom: 0;
+	line-height: 1.1em;
+}

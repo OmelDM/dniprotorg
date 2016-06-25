@@ -11,6 +11,7 @@
 }
 .navigation__link {
 	text-decoration: none;
+	font-family: 'Neucha', cursive;
 	color: #660000;
 }
 .navigation__dropdown {

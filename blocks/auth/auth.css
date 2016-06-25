@@ -2,7 +2,6 @@
 	display: inline-block;
 	position: absolute;
 	right: 120px;
-	font-family: Helvetica;
 }
 .auth__button {
 	color: #660000;
