@@ -4,11 +4,13 @@
 	right: 15px;
 	bottom: 0;
 	margin: 10px 0 0 0;
+	width: 310px;
 }
-@media (max-width: 630px) {
+@media (max-width: 1000px) {
 	.side-menu  {
 		display: block;
 		position: static;
+		width: 100%;
 	}
 	.side-menu__vacancy::after {
 		display: none;
@@ -29,7 +31,7 @@
 .side-menu__fb-logo:hover {
 	opacity: 1;
 }
-.side-menu__vacancy {
+.side-menu__item {
 	display: inline-block;
 	position: relative;
 	margin: 0 0 15px 0;
@@ -43,17 +45,23 @@
 	font-size: 1.2em;
 	color: #660000;
 }
-.side-menu__vacancy:hover {
+.side-menu__item:hover {
 	background: #fff;
 }
-.side-menu__vacancy::after {
-    content: '';
-    position: absolute;
-    right: 15px;
-    top: 3px;
-    width: 32px;
-    height: 32px;
-    background: url(https://cdn4.iconfinder.com/data/icons/business-men-women-set-2/512/26-512.png);
-    /*background: url(../../images/vacancy.png);*/
-    background-size: cover;
+.side-menu__item::after {
+	content: '';
+	position: absolute;
+	right: 15px;
+	top: 3px;
+	width: 32px;
+	height: 32px;
+}
+.side-menu__item_vacancy::after {
+	background: url(https://cdn4.iconfinder.com/data/icons/business-men-women-set-2/512/26-512.png);
+	/*background: url(../../images/vacancy.png);*/
+	background-size: cover;
+}
+.side-menu__item_fb::after {
+	background: url(http://simpleicon.com/wp-content/uploads/facebook.png);
+	background-size: cover;
 }

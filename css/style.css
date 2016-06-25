@@ -17,10 +17,6 @@ body {
 	margin-top: 10px;
 	margin-left: calc(50% - 145px);
 }
-.copyrights {
-	text-align: center;
-	padding: 15px 0;
-}
 @media (max-width: 767px) {
 	.logo {
 		width: 250px;
