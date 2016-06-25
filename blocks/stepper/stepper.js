@@ -1,6 +1,9 @@
 function updateStepper(anAction, anID, anUpdateCount) {
 	"use strict";
 
+	var MIN_VALUE = 1;
+	var MAX_VALUE = 99999;
+
 	if (undefined === anUpdateCount) {
 		anUpdateCount = false;
 	}
@@ -14,12 +17,12 @@ function updateStepper(anAction, anID, anUpdateCount) {
 		value--;
 	}
 	
-	if (value < stepper.min) {
-		value = stepper.min;
+	if (value < MIN_VALUE) {
+		value = MIN_VALUE;
 	}
 	
-	if (stepper.max < value) {
-		value = stepper.max;
+	if (MAX_VALUE < value) {
+		value = MAX_VALUE;
 	}
 
 	stepper.value = value;

@@ -53,7 +53,7 @@
 		text-align: center;
 	}
 	.cart-small_empty {
-		direction: none;
+		display: none;
 	}
 	.cart-small__count {
 		display: none;

@@ -30,6 +30,7 @@
 	font-size: 14px;
 	text-align: right;
 	border: 1px solid #ccc;
+	width: 60px;
 }
 .stepper_input_small {
 	font-size: 11px;
