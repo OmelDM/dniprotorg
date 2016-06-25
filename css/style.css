@@ -17,6 +17,23 @@ body {
 	margin-top: 10px;
 	margin-left: calc(50% - 145px);
 }
+.title {
+	padding: 15px 0;
+	font-size: 24px;
+}
+.partners {
+	text-align: center;
+	padding: 10px 0;
+}
+.partners__image {
+	margin: 10px;
+	padding: 10px 6px;
+	border: 1px solid #eee;
+}
+.copyrights {
+	text-align: center;
+	padding: 15px 0;
+}
 @media (max-width: 767px) {
 	.logo {
 		width: 250px;
@@ -29,6 +46,9 @@ body {
 }
 .bg-white-transparent {
 	background: rgba(255,255,255, 0.7);
+}
+.bg-white {
+	background: rgb(255,255,255) !important;
 }
 .shadow {
 	text-shadow: 2px 0px 0px rgba(255, 255, 255, 0.5), 3px 0px 0px rgba(255, 255, 255, 0.4), 4px 0px 0px rgba(255, 255, 255, 0.3), 5px 0px 0px rgba(255, 255, 255, 0.2),
@@ -75,17 +95,7 @@ body {
 	margin-bottom: 0;
 	line-height: 1.1em;
 }
-.partner-img {
-	margin: 10px;
-}
-.copyrights {
-	line-height: 36px;
-	font-weight: bold;
-}
 @media (max-width: 970px) {
-	.partners, .copyrights {
-		margin: 0 15px;
-	}
 	.content-main {
 		margin-right: 0;
 	}
