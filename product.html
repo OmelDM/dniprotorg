@@ -6,6 +6,10 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:url" content="[[~[[*id]]? &scheme=`full`]]">
+	<meta property="og:title" content="[[*pagetitle]] | [[++site_name]]">
+	<meta property="og:image" content="[[!++site_url]][[*image]]">
+	<meta property="fb:app_id" content="1514049612236680">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<title>Title</title>
@@ -303,8 +307,17 @@
 							<div class="key-value__key">
 								Ціна
 							</div>
-							<div class="key-value__value key-value__value_last">
+							<div class="key-value__value">
 								<span class="product__price">47</span><span class="product__units"> грн/кг</span>
+							</div>
+							<div class="key-value__key">
+							</div>
+							<div class="key-value__value key-value__value_last">
+								<div class="fb-share-button" data-href="[[~[[*id]]]]" data-layout="button" data-mobile-iframe="true">
+									<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=[[~[[*id]]]]src=sdkpreparse">
+										Поширити
+									</a>
+								</div>
 							</div>
 						</div>
 						<form action="#" method="post" class="stepper stepper_display_block">
