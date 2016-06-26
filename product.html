@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="uk">
 <head>
-<!--	<base href="">	-->  
+<!--	<base href="">	-->
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="shortcut icon" href="favicon.ico">
-	<title>Product Page</title>
+	<title>Title</title>
 </head>
 <body>
 	<!-- start of Facebook Page Plugin code -->
@@ -27,102 +27,300 @@
 	<div class="container">
 		<!-- Header -->
 		<header class="row">
-			<div class="col-lg-12 text-center">
+			<div class="col-lg-12">
 				<!-- Login\Registr	 -->
-<!--			<div class="login-registr">
-					<a href="#" class="login-register-button">Увійти</a> / <a href="#" class="login-register-button">Зареєструватися</a>
+<!--			<div class="auth">
+					<a href="#" class="auth__button">Увійти</a> / <a href="#" class="auth__button">Зареєструватися</a>
 				</div>
 -->
-				<div class="login-register">
-					<a href="#" class="login-register-button person-before" title="Персональний кабінет">Джон Сміт</a> (<a href="#" class="login-register-button">вийти</a>)
+				<div class="auth">
+					<a href="#" class="auth__button auth__button_logged-in" title="Персональний кабінет">Джон Сміт</a> (<a href="#" class="auth__button">вийти</a>)
 				</div>
+
 				<div class="logo">
 					<a href="#">
 						<img src="images/logo.png" alt="">
 					</a>
 				</div>
 				<!-- Shop cart -->
-<!--			
-				<div class="shop-cart-empty">
-				</div>
--->
-				<div class="shop-cart">
-					<div class="shop-cart-empty " data-shopcart="1">
+			
+<!-- 				<div class="cart-small cart-small_empty">
+				</div> -->
+
+				<div class="cart-small" data-shopcart="1">
+					<div class="cart-small__count">
+						22
+					</div>
+					<div class="cart-small__title">
+						<a href="#" onClick="openModalWithID('shop-cart-modal-id');return false;" class="cart-small__link shadow">Кошик</a>
+					</div>
+
+					<div id="shop-cart-modal-id" class="modal-container">
+						<form class="modal" action="#" id="shopOrderForm" method="post">
+							<div class="button-remove" onclick="closeModalWithID('shop-cart-modal-id'); return false;"></div>
+							<div class="modal__title">
+								Кошик
+							</div>
+
+							<div class="cart modal-content">
+									
+								<div class="cart-item cart-item_large">
+									<div class="cart-item__image">
+										<img class="cart-item__img cart-item__img_large" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="">
+									</div>
+									<div class="cart-item__content cart-item__content_large">
+
+										<div class="cart-item__name cart-item__name_large">
+											<a href="#" class="link">
+												Мясо
+											</a>
+										</div>
+										<div class="cart-item__price cart-item__price_large">
+											50 грн.
+										</div>
+										<div class="cart-item__count cart-item__count_large">
+											<div class="stepper">
+												<div class="button button_stepper" onclick="updateStepper('minus', 'id94', true);">
+													−
+												</div>
+												<input class="input input_stepper shk-count" type="text" name="count[]" id="id94" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
+												<div class="button button_stepper" onclick="updateStepper('plus', 'id94', true);">
+													+
+												</div>
+											</div>
+										</div>
+										<a href="#del" class="button-remove button-remove_middle"></a>
+										<div class="cart-item__total-price cart-item__total-price_large">
+											500 грн.
+										</div>
+									</div>
+								</div>
+								
+								<div class="cart-item cart-item_large">
+									<div class="cart-item__image">
+										<img class="cart-item__img cart-item__img_large"  src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="">
+									</div>
+									<div class="cart-item__content cart-item__content_large">
+
+										<div class="cart-item__name cart-item__name_large">
+											<a href="#" class="link">
+												Сарделька 2
+											</a>
+										</div>
+										<div class="cart-item__price cart-item__price_large">
+											50 грн.
+										</div>
+										<div class="cart-item__count cart-item__count_large">
+											<div class="stepper">
+												<div class="button button_stepper" onclick="updateStepper('minus', 'id91', true);">
+													−
+												</div>
+												<input class="input input_stepper shk-count" type="text" name="count[]" id="id91" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
+												<div class="button button_stepper" onclick="updateStepper('plus', 'id91', true);">
+													+
+												</div>
+											</div>
+										</div>
+										<a href="#del" class="button-remove button-remove_middle"></a>
+										<div class="cart-item__total-price cart-item__total-price_large">
+											50 грн.
+										</div>
+									</div>
+								</div>
+								
+								<div class="cart-item cart-item_large">
+									<div class="cart-item__image">
+										<img class="cart-item__img cart-item__img_large"  src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="">
+									</div>
+									<div class="cart-item__content cart-item__content_large">
+
+										<div class="cart-item__name cart-item__name_large">
+											<a href="#" class="link">
+												Ковбаса копчена
+											</a>
+										</div>
+										<div class="cart-item__price cart-item__price_large">
+											112 грн.
+										</div>
+										<div class="cart-item__count cart-item__count_large">
+											<div class="stepper">
+												<div class="button button_stepper" onclick="updateStepper('minus', 'id92', true);">
+													−
+												</div>
+												<input class="input input_stepper shk-count" type="text" name="count[]" id="id92" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
+												<div class="button button_stepper" onclick="updateStepper('plus', 'id92', true);">
+													+
+												</div>
+											</div>
+										</div>
+										<a href="#del" class="button-remove button-remove_middle"></a>
+										<div class="cart-item__total-price cart-item__total-price_large">
+											224 грн.
+										</div>
+									</div>
+								</div>
+								
+								<div class="cart-item cart-item_large">
+									<div class="cart-item__image">
+										<img class="cart-item__img cart-item__img_large"  src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="">
+									</div>
+									<div class="cart-item__content cart-item__content_large">
+
+										<div class="cart-item__name cart-item__name_large">
+											<a href="#" class="link">
+												Сарделька 2
+											</a>
+										</div>
+										<div class="cart-item__price cart-item__price_large">
+											50 грн.
+										</div>
+										<div class="cart-item__count cart-item__count_large">
+											<div class="stepper">
+												<div class="button button_stepper" onclick="updateStepper('minus', 'id93', true);">
+													−
+												</div>
+												<input class="input input_stepper shk-count" type="text" name="count[]" id="id93" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
+												<div class="button button_stepper" onclick="updateStepper('plus', 'id93', true);">
+													+
+												</div>
+											</div>
+										</div>
+										<a href="#del" class="button-remove button-remove_middle"></a>
+										<div class="cart-item__total-price cart-item__total-price_large">
+											50 грн.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="modal-footer__left">
+									<a href="#catalog" class="link link_gray" onclick="closeModalBlocks(); return false;">
+										Продовжити покупки
+									</a>
+								</div>
+								<div class="modal-footer__fill">
+								</div>
+								<div class="modal-footer__right">
+									<div class="cart-info">
+										<div class="table">
+											<div class="table-row">
+												<div class="table-data table-data_align_left">
+													Вартість доставки
+												</div>
+												<div class="table-data table-data_align_right">
+													50 грн.
+												</div>
+											</div>
+											<div class="table-row">
+												<div class="table-data table-data_align_left">
+													Загальна сума
+												</div>
+												<div class="table-data table-data_align_right">
+													194 грн.
+												</div>
+											</div>
+										</div>
+										<a href="#" class="button button_wide">
+											Оформити замовлення
+										</a>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
-				<!-- Social -->
-				<div class="social-block bg-white-transparent hidden-xs hidden-sm">
-					<span class="">Ми в мережі Facebook: </span>
-					<a href="https://www.facebook.com/dniprotorg/" target="_blank">
-						<img class="social-block-fb-logo" src="images/fb-logo.jpg" alt="">
+
+
+				<div class="side-menu">
+					<a href="#" class="side-menu__item side-menu__item_vacancy shadow-gray bg-white-transparent">
+						Наші вакансії
+					</a>
+					<a href="https://www.facebook.com/dniprotorg/" target="_blank" class="side-menu__item side-menu__item_fb shadow-gray bg-white-transparent">
+						Ми в мережі Facebook
 					</a>
 				</div>
+				
 			</div>
 		</header>
 		
 		<!-- Navigation -->
 		<nav class="row">
-			<div class="col-lg-12 text-center">
-				<ul class="nav-main">
-					<li><a href="#">Головна</a></li>
-					<li class="nav-main-dropdown"><a href="#">Продукція</a>
-							<ul class="nav-main-dropdown-menu">
-								<li class="nav-main-dropdown-menu-item"><a href="#">М'ясо</a></li>
-								<li class="nav-main-dropdown-menu-item"><a href="#">Ковбаси</a></li>
-								<li class="nav-main-dropdown-menu-item"><a href="#">М'ясні делікатеси</a></li>
-								<li class="nav-main-dropdown-menu-item"><a href="#">Напівфабрикати</a></li>
+			<div class="col-lg-12">
+				<ul class="navigation">
+					<li class="navigation__item shadow"><a href="#" class="navigation__link">Головна</a></li>
+					<li class="navigation__item shadow navigation__dropdown"><a href="#" class="navigation__link">Продукція</a>
+							<ul class="navigation__dropdown-container">
+								<li class="navigation__item shadow navigation__dropdown-item"><a href="#" class="navigation__link">М'ясо</a></li>
+								<li class="navigation__item shadow navigation__dropdown-item"><a href="#" class="navigation__link">Ковбаси</a></li>
+								<li class="navigation__item shadow navigation__dropdown-item"><a href="#" class="navigation__link">М'ясні делікатеси</a></li>
+								<li class="navigation__item shadow navigation__dropdown-item"><a href="#" class="navigation__link">Напівфабрикати</a></li>
 							</ul>
 					</li>
-					<li><a href="#">Магазини</a></li>
-					<li><a href="#">Акції</a></li>
-					<li><a href="#">Новини</a></li>
-					<li><a href="#">Контакти</a></li>
+					<li class="navigation__item shadow"><a href="#" class="navigation__link">Магазини</a></li>
+					<li class="navigation__item shadow"><a href="#" class="navigation__link">Акції</a></li>
+					<li class="navigation__item shadow"><a href="#" class="navigation__link">Новини</a></li>
+					<li class="navigation__item shadow"><a href="#" class="navigation__link">Контакти</a></li>
 				</ul>
 			</div>
 		</nav>
+
+		<!-- Breadcrumbs -->
+		<div class="row">
+			<div class="col-lg-12 breadcrumbs">
+				<a class="link link_small" href="#">
+					Каталог товарів</a>
+				 / 
+				<a class="link link_small" href="#">
+					М'ясо</a>
+				 / 
+				<a class="link link_small" href="#">
+					Свинина</a>
+				 / 
+				<a class="link link_small" href="#">
+					Лопатка свинна</a>
+		    </div>
+	    </div>
 		
 		<!-- Content -->
 		<div class="row">
 
 			<!-- Main content -->
 			<div class="col-md-7">
-				<div class="content-main bg-white-transparent">
+				<div class="content bg-white-transparent">
 					<img class="img-responsive" src="http://babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg">
 				</div>
 			</div>
 
 			<!-- Side content -->
 			<div class="col-md-5">
-				<div class="content-right bg-white-transparent">
+				<div class="content bg-white-transparent">
 					<div class="cart">
 						<div class="cart__title cart__title_large">
-							Сарделька 1
+							Лопатка свинна
 						</div>
-						<div class="text-center">
-							<div class="key-value">
-								<div class="key-value__key">
-									Ціна
-								</div>
-								<div class="key-value__value key-value__value_last">
-									47 грн.
-								</div>
+						<div class="key-value">
+							<div class="key-value__key">
+								Ціна
 							</div>
-							<form>
-								<div class="stepper">
-									<div class="stepper_button" onclick="updateStepper('minus', 'id90', true);">
-										−
-									</div>
-									<input class="stepper_input shk-count" type="number" name="count[]" id="id90" value="2" onblur="SHK.changeCartItemsCount();return false;" maxlength="3" min="1" max="999">
-									<div class="stepper_button" onclick="updateStepper('plus', 'id90', true);">
-										+
-									</div>
-								</div>
-								<br>
-								<button type="submit" class="form__button form__button_first form__button_wide shk-but">
-									До кошика
-								</button>
-							</form>
+							<div class="key-value__value key-value__value_last">
+								<span class="product__price">47</span><span class="product__units"> грн/кг</span>
+							</div>
 						</div>
+						<form action="#" method="post" class="stepper stepper_display_block">
+							<input type="hidden" name="shk-id" value="444">
+							<input type="hidden" name="shk-name" value="Сарделька 1">
+							<div class="button button_stepper" onclick="updateStepper('minus', 'id444', true);">
+								&minus;
+							</div>
+							<input class="input input_stepper shk-count" type="text" name="shk-count" id="id444" value="1" maxlength="5">
+							<div class="button button_stepper" onclick="updateStepper('plus', 'id444', true);">
+								&plus;
+							</div><br>
+							<button type="submit" class="button button_margins button_product">
+								До кошика
+							</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -130,19 +328,47 @@
 		
 		<!-- Content footer -->
 		<div class="row">
-			<div class="col-lg-12 partners bg-white-transparent text-center">
-				<h1>Наші партнери:</h1>
-				<a href="http://mhp.com.ua" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://mhp.com.ua');"><img class="partner-img" src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/mhp.5ca2fe92816e8e90bd5fe04c4337f2e3.jpg" alt="МХП"/></a>
-				<a href="http://eurocommerce.com.ua" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://eurocommerce.com.ua');"><img class="partner-img" src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/euro_com.9a336ddd71de3728ff573c9ecd8f1942.png" alt="Euro Commerce"/></a>
-				<a href="http://pchelkamarket.kiev.ua" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://pchelkamarket.kiev.ua');"><img class="partner-img" src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/pchelkamarket.406e9ea4c3e0e508a32d46f602f5621c.jpg" alt="Пчелка маркет"/></a>
-				<a href="http://3bears.com.ua/ru" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://3bears.com.ua/ru');"><img class="partner-img" src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/3bears.c5a5e9dcacc8580267e8c96d7984d6a9.jpg" alt="Три ведмеді"/></a>
+			<div class="col-lg-12">
+				<div class="content content_align_center bg-white-transparent">
+					<div class="content__title">
+						Наші партнери:
+					</div>
+					<div class="content content_inner bg-white">
+						<a class="partner" href="http://mhp.com.ua" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://mhp.com.ua');">
+							<img class="partner__image" src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/mhp.5ca2fe92816e8e90bd5fe04c4337f2e3.jpg" alt="МХП"/>
+						</a>
+						<a class="partner" href="http://eurocommerce.com.ua" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://eurocommerce.com.ua');">
+							<img class="partner__image" src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/euro_com.9a336ddd71de3728ff573c9ecd8f1942.png" alt="Euro Commerce"/>
+						</a>
+						<a class="partner" href="http://pchelkamarket.kiev.ua" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://pchelkamarket.kiev.ua');">
+							<img class="partner__image" src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/pchelkamarket.406e9ea4c3e0e508a32d46f602f5621c.jpg" alt="Пчелка маркет"/>
+						</a>
+						<a class="partner" href="http://3bears.com.ua/ru" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://3bears.com.ua/ru');">
+							<img class="partner__image" src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/3bears.c5a5e9dcacc8580267e8c96d7984d6a9.jpg" alt="Три ведмеді"/>
+						</a>
+						<a class="partner" href="http://kishenya.ua/ru/" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://kishenya.ua/ru/');">
+							<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/velika%20kishenya.c5916c2ddcf081717b5fb1eda95792ef.jpg" class="partner__image" alt="Велика Кишеня"/>
+						</a>
+						<a class="partner" href="http://megamarket.ua" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://megamarket.ua');">
+							<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/MegaMarket_logo.e5e9f712338d174ff8bb4bf5ddba4360.jpg" class="partner__image" alt="МегаМаркет"/>
+						</a>
+						<a class="partner" href="http://lotok.ua" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://lotok.ua');">
+							<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/lotok-market.ac2f90c700edc12d8d13c6195689c4ca.png" class="partner__image" alt="ЛотОК маркет"/>
+						</a>
+						<a class="partner" href="http://primemeat.com.ua/мясо" target="_blank" onclick="ga('send', 'event', 'outbound', 'click', 'http://primemeat.com.ua/мясо');">
+							<img src="http://dniprotorg.com.ua/assets/components/phpthumbof/cache/primemeat.f55c3137723d5edf13cf82f400e072f4.jpg" class="partner__image" alt="Prime Meat Service"/>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		
 		<!-- Footer -->
 		<footer class="row">
-			<div class="col-lg-12 bg-white-transparent text-center copyrights">
-				ТОВ &laquo;ТД &laquo;ДНІПРО-торг&raquo; &copy; 2015
+			<div class="col-lg-12">
+				<div class="content content_align_center bg-white-transparent">
+					ТОВ &laquo;ТД &laquo;ДНІПРО-торг&raquo; &copy; 2015
+				</div>
 			</div>
 		</footer>
 		
@@ -150,29 +376,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		$(document).ready(function() {
-			var owl = $('.owl-carousel');
-			owl.owlCarousel({
-				autoplay: true,
-				autoplayTimeout: 5000,
-				autoplaySpeed: 1000,
-				margin: 10,
-				loop: true,
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 2
-					},
-					1000: {
-						items: 3
-					}
-				}
-			})
-		})
-	</script>
 <!--
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
