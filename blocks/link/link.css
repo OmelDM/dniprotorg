@@ -1,0 +1,22 @@
+.link {
+	color: #D73936;
+}
+.link_margin {
+	margin: 0 15px 0;
+}
+.link:hover {
+	text-decoration: none;
+}
+.link_small {
+	font-size: .8em;
+}
+.link_gray {
+	color: #888;
+}
+.link_gray:hover {
+	color: #D73936;
+}
+.link_dimmed {
+	color: #888;
+	text-decoration: none;
+}

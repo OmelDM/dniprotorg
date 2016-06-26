@@ -27,6 +27,16 @@ body {
 		height: 216px;
 	}
 }
+.breadcrumbs {
+	padding: 5px 15px;
+	font-size: 20px;
+	padding-left: 110px;
+}
+@media (max-width: 476px) {
+	.breadcrumbs {
+		padding-left: 55px;
+	}
+}
 .bg-white-transparent {
 	background: rgba(255,255,255, 0.7);
 }
@@ -121,14 +131,4 @@ body {
 .change-address {
 	text-align: left;
 	font-size: 16px;
-}
-.breadcrumbs {
-	padding: 5px 15px;
-	font-size: 20px;
-	padding-left: 110px;
-}
-@media (max-width: 476px) {
-	.breadcrumbs {
-		padding-left: 55px;
-	}
 }
