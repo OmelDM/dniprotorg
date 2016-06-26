@@ -1,0 +1,14 @@
+.input {
+	padding: 5px 8px;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: left;
+	border: 1px solid #ccc;
+
+}
+.input:focus {
+	border: 1px solid #D73936;
+}
+.input:hover {
+	border: 1px solid #D73936;
+}

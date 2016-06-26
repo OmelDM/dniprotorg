@@ -46,99 +46,17 @@ body {
 .shadow:hover {
 	text-shadow: white 2px 0px, white 2px 2px, white 0px 2px, white -2px 2px, white -2px 0px, white -2px -2px, white 0px -2px, white 2px -2px;
 }
-.shadow-gray {
+.shadow-gray, .shadow-gray_hover:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+.shadow-strong-gray {
+	box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.3), 0 16px 20px 0 rgba(0, 0, 0, 0.29);
 }
 /*
 
 	OLD Staff
 
 */
-/*
-	Products
-*/
-.product {
-	display: inline-block;
-	margin: 20px;
-	width: 285px;
-	height: 250px;
-	position: relative;
-	background: rgba(255, 255, 255, 0.7);
-}
-.product-link {
-	text-decoration: none;
-}
-.product-title {
-	text-decoration: none;
-	color: #660000;
-	font-size: 30px;
-	display: block;
-	position: absolute;
-	top: 10px;
-	bottom: -5px;
-	overflow: hidden;
-}
-.product-title_small {
-	font-size: 22px;
-}
-.product-image {
-	display: inline-block;
-	width: 255px;
-	height: 165px;
-}
-.product:hover {
-	background: #fff;
-}
-.product-buy {
-	display: none;
-	position: absolute;
-	top: 250px;
-	left: 0;
-	width: 100%;
-	padding: 20px;
-	background: #fff;
-	z-index: 100;
-}
-.product:hover .product-buy {
-	display: block;
-}
-.product-shadow:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
-}
-.product:hover .product-buy-shadow {
-	box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.3), 0 16px 20px 0 rgba(0, 0, 0, 0.29);
-}
-.product-buy-form {
-	padding: 10px;
-}
-.product-buy-button {
-	display: inline-block;
-	margin: 10px 10px;
-	padding: 5px 8px;
-	font-size: 16px;
-	color: #D73936;
-	cursor: pointer;
-	border: 1px solid #ccc;
-	background: #fff;
-}
-.product-buy-button:hover {
-	color: #fff;
-	background: #D73936;
-	border: 1px solid #D73936;
-}
-.product-buy-text {
-	padding: 5px 8px;
-	width: 75px;
-	font-size: 14px;
-	text-align: right;
-	border: 1px solid #ccc;
-}
-.product-buy-text:focus {
-	border: 1px solid #D73936;
-}
-.product-buy-text:hover {
-	border: 1px solid #D73936;
-}
 /*
 	Forms
 */

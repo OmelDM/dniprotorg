@@ -80,11 +80,11 @@
 										</div>
 										<div class="cart-item__count cart-item__count_large">
 											<div class="stepper">
-												<div class="stepper_button" onclick="updateStepper('minus', 'id94', true);">
+												<div class="button button_stepper" onclick="updateStepper('minus', 'id94', true);">
 													−
 												</div>
-												<input class="stepper_input shk-count" type="text" name="count[]" id="id94" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
-												<div class="stepper_button" onclick="updateStepper('plus', 'id94', true);">
+												<input class="input input_stepper shk-count" type="text" name="count[]" id="id94" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
+												<div class="button button_stepper" onclick="updateStepper('plus', 'id94', true);">
 													+
 												</div>
 											</div>
@@ -112,11 +112,11 @@
 										</div>
 										<div class="cart-item__count cart-item__count_large">
 											<div class="stepper">
-												<div class="stepper_button" onclick="updateStepper('minus', 'id91', true);">
+												<div class="button button_stepper" onclick="updateStepper('minus', 'id91', true);">
 													−
 												</div>
-												<input class="stepper_input shk-count" type="text" name="count[]" id="id91" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
-												<div class="stepper_button" onclick="updateStepper('plus', 'id91', true);">
+												<input class="input input_stepper shk-count" type="text" name="count[]" id="id91" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
+												<div class="button button_stepper" onclick="updateStepper('plus', 'id91', true);">
 													+
 												</div>
 											</div>
@@ -144,11 +144,11 @@
 										</div>
 										<div class="cart-item__count cart-item__count_large">
 											<div class="stepper">
-												<div class="stepper_button" onclick="updateStepper('minus', 'id92', true);">
+												<div class="button button_stepper" onclick="updateStepper('minus', 'id92', true);">
 													−
 												</div>
-												<input class="stepper_input shk-count" type="text" name="count[]" id="id92" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
-												<div class="stepper_button" onclick="updateStepper('plus', 'id92', true);">
+												<input class="input input_stepper shk-count" type="text" name="count[]" id="id92" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
+												<div class="button button_stepper" onclick="updateStepper('plus', 'id92', true);">
 													+
 												</div>
 											</div>
@@ -176,11 +176,11 @@
 										</div>
 										<div class="cart-item__count cart-item__count_large">
 											<div class="stepper">
-												<div class="stepper_button" onclick="updateStepper('minus', 'id93', true);">
+												<div class="button button_stepper" onclick="updateStepper('minus', 'id93', true);">
 													−
 												</div>
-												<input class="stepper_input shk-count" type="text" name="count[]" id="id93" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
-												<div class="stepper_button" onclick="updateStepper('plus', 'id93', true);">
+												<input class="input input_stepper shk-count" type="text" name="count[]" id="id93" value="1" onblur="SHK.changeCartItemsCount();return false;" maxlength="5">
+												<div class="button button_stepper" onclick="updateStepper('plus', 'id93', true);">
 													+
 												</div>
 											</div>
@@ -221,7 +221,7 @@
 												</div>
 											</div>
 										</div>
-										<a href="#" class="form__button form__button_wide">
+										<a href="#" class="button button_wide">
 											Оформити замовлення
 										</a>
 									</div>
@@ -269,80 +269,82 @@
 		<div class="row">
 			
 			<!-- Main content -->
-			<div class="col-lg-12 text-center">
-				<div class="product product-shadow shk-item">
-					<a href="#" class="product-title">
-						<img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="Сарделька 1" class="product-image">
-						Розділ
-					</a>
-				</div>
-				<div class="product product-shadow shk-item">
-					<a href="#" class="product-title">
-						<img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="Сарделька 1" class="product-image">
-						Ковбаска свинна для гриля
-					</a>
-					<div class="product-buy product-buy-shadow">
-						<span class="product-buy-price">60</span><span class="product-buy-price"> грн/кг</span>
-						<form action="#" method="post" class="product-buy-form">
-							<input type="hidden" name="shk-id" value="222">
-							<input type="hidden" name="shk-name" value="Сарделька 1">
-							<div class="product-buy-button" onclick="updateSpinner('minus', 'id222');">
-								&minus;
-							</div>
-							<input id="id222" class="product-buy-text" type="number" name="shk-count" min="1" max="999" value="1" maxlength="3">
-							<div class="product-buy-button" onclick="updateSpinner('plus', 'id222');">
-								&plus;
-							</div><br>
-							<button type="submit" class="product-buy-button">
-								До кошика
-							</button>
-						</form>
+			<div class="col-lg-12">
+				<div class="content content_align_center">
+					<div class="product shadow-gray_hover shk-item">
+						<a href="#" class="product__title">
+							<img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="Сарделька 1" class="product__image">
+							Розділ
+						</a>
 					</div>
-				</div>
-				<div class="product product-shadow shk-item">
-					<a href="#" class="product-title">
-						<img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="Сарделька 1" class="product-image">
-						Сарделька 1
-					</a>
-					<div class="product-buy product-buy-shadow">
-						<span class="product-buy-price">60</span><span class="product-buy-price"> грн/кг</span>
-						<form action="#" method="post" class="product-buy-form">
-							<input type="hidden" name="shk-id" value="333">
-							<input type="hidden" name="shk-name" value="Сарделька 1">
-							<div class="product-buy-button" onclick="updateSpinner('minus', 'id333');">
-								&minus;
-							</div>
-							<input id="id333" class="product-buy-text" type="number" name="shk-count" min="1" max="999" value="1" maxlength="3">
-							<div class="product-buy-button" onclick="updateSpinner('plus', 'id333');">
-								&plus;
-							</div><br>
-							<button type="submit" class="product-buy-button">
-								До кошика
-							</button>
-						</form>
+					<div class="product shadow-gray_hover shk-item">
+						<a href="#" class="product__title product__title_small">
+							<img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="Сарделька 1" class="product__image">
+							Ковбаска свинна для гриля
+						</a>
+						<div class="product__details shadow-strong-gray">
+							<span class="product__price">60</span><span class="product__units"> грн/кг</span>
+							<form action="#" method="post" class="stepper stepper_display_block">
+								<input type="hidden" name="shk-id" value="222">
+								<input type="hidden" name="shk-name" value="Сарделька 1">
+								<div class="button button_stepper" onclick="updateStepper('minus', 'id222', true);">
+									&minus;
+								</div>
+								<input class="input input_stepper shk-count" type="text" name="shk-count" id="id222" value="1" maxlength="5">
+								<div class="button button_stepper" onclick="updateStepper('plus', 'id222', true);">
+									&plus;
+								</div><br>
+								<button type="submit" class="button button_margins button_product">
+									До кошика
+								</button>
+							</form>
+						</div>
 					</div>
-				</div>
-				<div class="product product-shadow shk-item">
-					<a href="#" class="product-title">
-						<img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="Сарделька 1" class="product-image">
-						Сарделька 1
-					</a>
-					<div class="product-buy product-buy-shadow">
-						<span class="product-buy-price">60</span><span class="product-buy-price"> грн/кг</span>
-						<form action="#" method="post" class="product-buy-form">
-							<input type="hidden" name="shk-id" value="444">
-							<input type="hidden" name="shk-name" value="Сарделька 1">
-							<div class="product-buy-button" onclick="updateSpinner('minus', 'id444');">
-								&minus;
-							</div>
-							<input id="id444" class="product-buy-text" type="number" name="shk-count" min="1" max="999" value="1" maxlength="3">
-							<div class="product-buy-button" onclick="updateSpinner('plus', 'id444');">
-								&plus;
-							</div><br>
-							<button type="submit" class="product-buy-button">
-								До кошика
-							</button>
-						</form>
+					<div class="product shadow-gray_hover shk-item">
+						<a href="#" class="product__title">
+							<img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="Сарделька 1" class="product__image">
+							Сарделька 1
+						</a>
+						<div class="product__details shadow-strong-gray">
+							<span class="product__price">60</span><span class="product__units"> грн/кг</span>
+							<form action="#" method="post" class="stepper stepper_display_block">
+								<input type="hidden" name="shk-id" value="333">
+								<input type="hidden" name="shk-name" value="Сарделька 1">
+								<div class="button button_stepper" onclick="updateStepper('minus', 'id333', true);">
+									&minus;
+								</div>
+								<input class="input input_stepper shk-count" type="text" name="shk-count" id="id333" value="1" maxlength="5">
+								<div class="button button_stepper" onclick="updateStepper('plus', 'id333', true);">
+									&plus;
+								</div><br>
+								<button type="submit" class="button button_margins button_product">
+									До кошика
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="product shadow-gray_hover shk-item">
+						<a href="#" class="product__title">
+							<img src="http://www.babystreet.kiev.ua/testdev/assets/components/phpthumbof/cache/sokovyta.e530251381fe6c781f964c0b04c8c2b5.jpg" alt="Сарделька 1" class="product__image">
+							Сарделька 1
+						</a>
+						<div class="product__details shadow-strong-gray">
+							<span class="product__price">60</span><span class="product__units"> грн/кг</span>
+							<form action="#" method="post" class="stepper stepper_display_block">
+								<input type="hidden" name="shk-id" value="444">
+								<input type="hidden" name="shk-name" value="Сарделька 1">
+								<div class="button button_stepper" onclick="updateStepper('minus', 'id444', true);">
+									&minus;
+								</div>
+								<input class="input input_stepper shk-count" type="text" name="shk-count" id="id444" value="1" maxlength="5">
+								<div class="button button_stepper" onclick="updateStepper('plus', 'id444', true);">
+									&plus;
+								</div><br>
+								<button type="submit" class="button button_margins button_product">
+									До кошика
+								</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

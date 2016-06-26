@@ -1,0 +1,29 @@
+.button {
+	display: inline-block;
+	padding: 5px 8px;
+	color: #D73936;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	background: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+}
+.button:hover {
+	color: #fff;
+	background: #D73936;
+	border: 1px solid #D73936;
+}
+.button_wide {
+	width: 100%;
+}
+.button_first {
+	margin-top: 10px;
+}
+.button_last {
+	margin-bottom: 10px;
+}
+.button_margins {
+	margin: 10px;
+}

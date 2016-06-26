@@ -1,15 +1,13 @@
 .stepper {
 	display: inline-block;
 }
-.stepper_button {
-	display: inline-block;
+.stepper_display_block {
+	display: block;
+	padding: 10px;
+}
+.button_stepper {
 	margin: 0 10px;
-	padding: 5px 8px;
 	font-size: 16px;
-	color: #D73936;
-	cursor: pointer;
-	border: 1px solid #ccc;
-	background: #fff;
 	width: 27px;
 	height: 30px;
 }
@@ -20,25 +18,11 @@
 	width: 17px;
 	height: 18px;
 }
-.stepper_button:hover {
-	color: #fff;
-	background: #D73936;
-	border: 1px solid #D73936;
-}
-.stepper_input {
-	padding: 5px 8px;
-	font-size: 14px;
+.input_stepper {
 	text-align: right;
-	border: 1px solid #ccc;
 	width: 60px;
 }
 .stepper_input_small {
 	font-size: 11px;
 	padding: 1px 4px;
-}
-.stepper_input:focus {
-	border: 1px solid #D73936;
-}
-.stepper_input:hover {
-	border: 1px solid #D73936;
 }

@@ -5,47 +5,6 @@
 .form_display_hidden {
 	display: none;
 }
-.form__button {
-	display: inline-block;
-	padding: 5px 8px;
-	font-size: 14px;
-	text-transform: uppercase;
-	text-align: center;
-	text-decoration: none;
-	color: #D73936;
-	cursor: pointer;
-	border: 1px solid #ccc;
-	background: #fff;
-}
-.form__button_wide {
-	width: 100%;
-}
-.form__button_first {
-	margin-top: 10px;
-}
-.form__button_last {
-	margin-bottom: 10px;
-}
-.form__button:hover {
-	color: #fff;
-	background: #D73936;
-	border: 1px solid #D73936;
-}
-.form__input {
-	padding: 5px 8px;
-	width: 100%;
-	font-size: 14px;
-	font-weight: 300;
-	text-align: left;
-	border: 1px solid #ccc;
-
-}
-.form__input:focus {
-	border: 1px solid #D73936;
-}
-.form__input:hover {
-	border: 1px solid #D73936;
-}
 .form__select {
 	width: 100%;
 	font-size: 1.4em;
