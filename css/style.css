@@ -56,6 +56,9 @@ body {
 .shadow:hover {
 	text-shadow: white 2px 0px, white 2px 2px, white 0px 2px, white -2px 2px, white -2px 0px, white -2px -2px, white 0px -2px, white 2px -2px;
 }
+.shadow-gray_hover {
+	transition: box-shadow .3s;
+}
 .shadow-gray, .shadow-gray_hover:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }

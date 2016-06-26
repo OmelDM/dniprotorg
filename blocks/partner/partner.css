@@ -8,8 +8,4 @@
 }
 .partner:hover {
 	border: 1px solid #ccc;
-	/*opacity: 1;*/
-}
-.partner__image:hover {
-	filter: grayscale(50%);
 }
