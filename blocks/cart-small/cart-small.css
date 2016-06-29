@@ -1,6 +1,7 @@
 .cart-small {
 	display: inline-block;
 	position: absolute;
+	top: 5px;
 	right: 15px;
 }
 .cart-small_empty {

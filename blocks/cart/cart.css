@@ -57,7 +57,7 @@
 .cart-item__name_large {
 	display: inline-block;
 	margin: 0 5px 0 0;
-	width: calc(100% - 85px - 162px - 110px - 20px - 15px - 20px);
+	width: calc(100% - 120px - 162px - 130px - 20px - 15px - 20px);
 	font-size: 1.1em;
 }
 .cart-item__price {
@@ -68,7 +68,7 @@
 	margin: 0 5px 0 0;
 	font-size: 1.1em;
 	text-align: right;
-	min-width: 85px;
+	min-width: 120px;
 }
 .cart-item__count {
 	display: inline-block;
@@ -86,7 +86,7 @@
 .cart-item__total-price_large {
 	font-size: 1.2em;
 	margin: 0 5px 0 0;
-	min-width: 110px;
+	min-width: 130px;
 	text-align: right;
 	float: none;
 }

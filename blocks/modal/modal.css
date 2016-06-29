@@ -8,7 +8,7 @@
 	z-index: 99;
 	background: rgba(0, 0, 0, 0.75);
 }
-.modal-container_display {
+.modal-keeper_display .modal-container {
 	display: block;
 }
 .modal {
