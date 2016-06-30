@@ -4,6 +4,9 @@
 .content_align_center {
 	text-align: center;
 }
+.content_display_none {
+	display: none;
+}
 .content__title {
 	padding: 10px 0;
 	text-align: center;

@@ -6,6 +6,9 @@
 	border: 1px solid #ccc;
 
 }
+.input_wide {
+	width: 100%;
+}
 .input:focus {
 	border: 1px solid #D73936;
 }

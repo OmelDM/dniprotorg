@@ -1,18 +1,3 @@
-function showIDWithParent(anID, aParentClass) {
-	"use strict";
-
-	var allForms = document.getElementsByClassName(aParentClass);
-	var formToShow = document.getElementById(anID);
-
-	for (var index = 0; index < allForms.length; index++) {
-		if (allForms[index] === formToShow) {
-			formToShow.classList.remove("form_display_hidden");
-			continue;
-		}
-		allForms[index].classList.add("form_display_hidden");
-	}
-}
-
 function makeDimmed(anObject) {
 	"use strict";
 
