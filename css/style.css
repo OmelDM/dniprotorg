@@ -65,10 +65,17 @@ body {
 .shadow-strong-gray {
 	box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.3), 0 16px 20px 0 rgba(0, 0, 0, 0.29);
 }
+.message {
+	padding: 15px;
+}
 .message_success {
 	font-size: 14px;
 	color: #f00;
 	text-align: center;
+}
+.message_error, .error {
+	color: #f00;
+	font-size: 14px !important;
 }
 /*
 
