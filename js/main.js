@@ -28,3 +28,12 @@ function updateSpinner(anAction, anID, anUpdateCount) {
 		SHK.changeCartItemsCount();
 	}
 }
+
+$(document).bind('ready',function() {
+	if ( SHK.data.delivery_name ) {
+		$('select[name="shk_delivery"]', '#shopOrderForm').val(SHK.data.delivery_name);
+	}
+	$('select[name="shk_delivery"]', '#shopOrderForm').bind('change',function() {
+		SHK.selectDelivery($(this).val());
+	});
+});
