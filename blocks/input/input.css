@@ -4,10 +4,17 @@
 	font-weight: 300;
 	text-align: left;
 	border: 1px solid #ccc;
-
 }
 .input_wide {
 	width: 100%;
+}
+.input_small {
+	width: 35px;
+	font-size: 11px;
+	padding: 1px 4px;
+}
+.input_align_right {
+	text-align: right;
 }
 .input:focus {
 	border: 1px solid #D73936;

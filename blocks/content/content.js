@@ -12,3 +12,16 @@ function showContentIDWithParent(anID, aParentClass) {
 		allForms[index].classList.add("content_display_none");
 	}
 }
+function makeDimmed(anObject) {
+	"use strict";
+
+	var allGrayed = document.getElementsByClassName("link_dimmed");
+
+	for (var index = 0; index < allGrayed.length; index++) {
+		if (allGrayed[index] === anObject) {
+			continue;
+		}
+		allGrayed[index].classList.remove("link_dimmed");
+	}
+	anObject.classList.add("link_dimmed");
+}

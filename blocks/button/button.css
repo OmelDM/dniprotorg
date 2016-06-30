@@ -15,6 +15,13 @@
 	background: #D73936;
 	border: 1px solid #D73936;
 }
+.button__small {
+	font-size: 12px;
+	margin: 0 0;
+	padding: 1px 4px;
+	width: 17px;
+	height: 18px;
+}
 .button_wide {
 	width: 100%;
 }

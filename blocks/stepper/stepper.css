@@ -6,24 +6,3 @@
 	display: block;
 	padding: 10px;
 }
-.button_stepper {
-	margin: 0 10px;
-	font-size: 16px;
-	width: 27px;
-	height: 30px;
-}
-.stepper_button__small {
-	font-size: 12px;
-	margin: 0 0;
-	padding: 1px 4px;
-	width: 17px;
-	height: 18px;
-}
-.input_stepper {
-	text-align: right;
-	width: 60px;
-}
-.stepper_input_small {
-	font-size: 11px;
-	padding: 1px 4px;
-}
