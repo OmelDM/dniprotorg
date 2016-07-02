@@ -28,6 +28,9 @@
 .product__title_small {
 	font-size: 22px;
 }
+.product__title_x_small {
+	font-size: 16px;
+}
 .product__image {
 	display: inline-block;
 	width: 255px;
