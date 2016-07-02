@@ -20,6 +20,11 @@
 	background: #fff;
 	padding: 20px;
 }
+.modal-inner {
+	display: inline-block;
+	margin: 20px 0 0 0;
+	padding: 20px;
+}
 .modal__title {
 	padding: 5px 5px 15px 5px;
 	font-size: 24px;

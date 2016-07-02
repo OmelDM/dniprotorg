@@ -16,6 +16,11 @@
 .content__text {
 	padding: 20px;
 }
+.content__text_action {
+	font-size: 18px;
+	text-indent: 20px;
+	line-height: 1.4em;
+}
 .content__text p {
 	font-size: 18px;
 	text-align: justify;
@@ -23,6 +28,9 @@
 	margin-top: 0.4em;
 	margin-bottom: 0;
 	line-height: 1.1em;
+}
+.content__text {
+	padding: 20px;
 }
 .content_inner {
 	margin: 10px auto;
