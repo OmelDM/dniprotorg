@@ -16,23 +16,43 @@
 	border: 1px solid #ccc;
 }
 .product__title {
-	text-decoration: none;
-	color: #660000;
-	font-size: 30px;
 	display: block;
 	position: absolute;
-	top: 10px;
-	bottom: -5px;
+	top: 180px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	text-align: center;
 	overflow: hidden;
 }
 .product__title_small {
-	font-size: 22px;
+	top: 126px;
+	padding: 5px;
 }
 .product__title_x_small {
 	font-size: 16px;
 }
+.product__link {
+	text-decoration: none;
+	color: #660000;
+	font-size: 20px;
+}
+.product__link_small {
+	font-size: 12px;
+}
+.product__image-container {
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	overflow: hidden;
+}
+.product__image-container_small {
+	top: 10px;
+	left: 10px;
+}
 .product__image {
-	display: inline-block;
 	width: 255px;
 	height: 165px;
 }
